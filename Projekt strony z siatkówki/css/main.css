@@ -314,6 +314,15 @@ section p
 	text-align:center;
 }
 
+.copyright::before
+{
+	content:"© "; 
+}
+.copyright
+{
+	text-align:center;
+	font-size:14px;
+}
 
 /*===============================================================stopka===============================================================*/
 .stopka
