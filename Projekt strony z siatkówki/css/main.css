@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+* 
+{
+	box-sizing: border-box;
+	padding:0;
+	margin: 0;
+}
+
+body 
+{
+	font-family: 'Lato', sans-serif;
+	color:rgba(15, 2, 2, 0.904);
+	line-height:1.7;
+}
+/*===============================================================poczatek nawigacji===============================================================*/
+ul
+{
+	list-style-type: none;
+}
+
+a 
+{
+	text-decoration:none;
+	color:rgba(15, 2, 2, 0.904);
+}
+
+h1 
+{
+	font-weight: 300;
+	line-height:1.3;
+	margin: 10px 0;
+}
+
+p 
+{
+	margin:10px 0;
+}
+
+.navigacja
+{
+	background-color:rgb(71, 70, 70);
+	color:white;
+	height:90px;
+	position:sticky;
+	top:0;
+	width:100%;
+	overflow:auto;
+	
+
+	
+}
+
+.navigacja .c_flex
+{
+	justify-content:space-between;
+}
+
+.container
+{
+	max-width:1650px;
+	margin:0 auto;
+	padding:0 40px;
+	overflow:auto;
+}
+
+
+
+.c_flex
+{
+	display:flex;
+	justify-content:center;
+	align-items:center; 
+	height:100%;
+	
+}
+.navigacja ul
+{
+	display:flex;
+	
+}
+
+.navigacja a
+{
+	color:white;
+	padding:5px;
+	margin:0 5px;
+}
+
+.navigacja a:hover
+{
+	border-top: 3px white solid;
+	border-bottom: 3px white solid;
+	border-radius:5px;
+}
+
+
+
+.navigacja li:first-child
+{
+
+border-bottom: 3px white solid;
+border-radius:5px;
+transition:all 0s linear 0s; 
+}
+.navigacja li:first-child:hover
+{
+	background-color:rgb(71, 70, 70);
+	border-bottom: 0px white solid;
+	border-radius:0px;
+	transition:all 0s linear 0s; 
+}
+
+.logo
+{
+	display:flex;
+	width:64px;
+	height:64px;
+	align-items:center;
+	justify-content:center;
+	
+}
+
+.logo:hover
+{	
+	transition:all 12s linear 0s;
+	transform:rotate(8640deg);
+}
+
+/*===============================================================koniec nawigacji===============================================================*/
+.tlo
+{
+	width:100%;
+	height:100%;
+}
+.glowne
+{
+	
+	height:1000px;
+	
+	background-image: url(../img/Tlo_glownev2.jpg);
+	 background-size:cover; 
+	background-repeat: no-repeat;
+	background-position: center center;
+	/* background-color:sandybrown;  */
+	
+	
+}
+h2
+{
+	display:flex;
+	justify-content: center;
+	font-size:45px;
+	margin:0 auto;
+	padding: 20px 0;
+	
+}
+.wstep
+{
+	display:flex;
+	justify-content: center;
+	font-size:21px;
+	padding:15px 0;
+}
+
+.zapoznanie
+{
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+	width:100%;
+	margin-bottom: 150px;
+	
+}
+video{
+	width:75%;
+}
+img
+{
+	width:75%;
+}
+.p_m
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	flex-basis:30%;
+}
+
+
+.d_m
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	flex-basis:30%;
+}
+
+.t_m
+{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	flex-basis:30%;
+}
+
+section h3
+{
+	font-size:30px;
+	font-weight:200;
+}
+
+section p
+{
+	text-align:center;
+	padding:15px 15px;
+}
+
+
+
+#strategy
+{
+	height:180px;
+	width:75%;
+}
+
+.p_kolor
+{
+	padding:0px;
+	margin:50px auto;
+	width:60px;
+	height: 60px;
+	/* background-color:green; */
+	background-color:#DBC414;
+	border-radius:50px;
+	transition:all 1s linear 0s;
+}
+
+
+.p_kolor:hover
+{
+	
+	width:60px;
+	height:60px;
+	background-color:transparent;
+	transform:rotate(360deg);
+	border-radius:50%;
+
+
+}
+.p_kolor a 
+{
+	display:flex;
+	justify-content:center;
+	/* align-content:center; */
+}
+
+/* .przycisk p
+{
+	display:none;
+} 
+.przycisk:hover ~ p
+{
+	display:inline;
+	
+} */
+
+#strzalka
+{
+	height:60px;
+	width:60px;
+	margin:0 40px;
+	/* justify-content:flex-end;*/
+} 
+
+.dalej
+{
+	display:flex;
+	flex-wrap:wrap;
+	flex-basis:100%;
+	/* justify-content:center; */
+}
+
+.dalej .te_2
+{
+	display:flex;
+	align-items:center;
+	justify-content:flex-end;
+	/* border:1px solid green; */
+}
+.te_2
+{
+	flex-basis:40%
+}
+
+.dalej .przycisk
+{
+	/* border:1px solid blue; */
+	align-items:center;
+	justify-content: flex-start;
+	
+}
+
+.przycisk
+{
+	flex-basis:20%;
+}
+
+.adnotacja
+{
+	text-align:center;
+}
+
+
+/*===============================================================stopka===============================================================*/
+.stopka
+{
+	background-color:rgb(71, 70, 70);
+	height:80px;
+	color:white;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+
+
+}
+
+.stopka p
+{
+	padding:8px 15px;
+}
+
+

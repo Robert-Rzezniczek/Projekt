@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Volleyball | All you've looked for.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<div class="tlo">
+	<div class="glowne"></div>
+</div>
+<!--nav-->
+
+<div class="navigacja" >
+	<div class="container c_flex">
+			<h1 class="logo"><img src="img/logo_r3.png" alt="Logo"></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="Tips.html">Tips</a></li>
+					<li><a href="Basic.html">Basic</a></li>
+					<li><a href="Drills.html">Drills</a></li>
+				</ul>
+			</nav>
+	</div>
+</div>
+
+
+<!-- <div class="tlo">
+	<div class="glowne"></div>
+</div> -->
+<!--main -->
+<br>
+<br>
+<main>
+	
+	<h2><b>Before we start</b></h2>
+	<p class="wstep">Our website will help you with lack of informations, drills and tips on how to become better at volleyball. </p>
+	<div class="zapoznanie">
+		<section class="p_m">
+			<h3>Drills</h3>
+			<p>On our website you can find drills for overall improvement and for exact postisions you may want to get better at.</p>
+			<video id="myVideo" controls width="500">
+				<source src="Video/The_Whip.mp4" type="video/mp4">
+			  </video>
+		</section>
+
+		<section class="d_m">
+			<h3>Basic knowledge</h3>
+			<p>You can also find some basic informations about positions, rules and also some advanced knowledge such as rotations, tactics and so on.</p>
+			<img  id="strategy" src="img/Basic_knowledge.jpg" alt="Strategy">
+		</section>
+
+
+		<section class="t_m">
+			<h3>Tips</h3>
+			<p>There will also be some tips that will help you during games, practices.</p>
+			
+			<img src="img/tips_tricks.jpg" alt="tips">
+		</section>
+</div>
+<!-- <div class="znika"> -->
+<div class="dalej">
+	<div class="te_2">
+		<h4>Let's start!</h4>
+	</div>
+	<div class="przycisk">
+		<div class="p_kolor"><a href="Basic.html"><img id="strzalka" src="img/arrowv_ta_lepsza.png" alt="arrow"></a></div>
+	</div>
+</div>
+<p class="adnotacja">It will take you to the site with basic information. You can also use the nav from this point on.</p>
+<!-- </div> -->
+</main>
+
+<br>
+<!--footer -->
+<footer>
+	<div class="stopka">
+		<p>Volley.org</p>
+		<p>Good luck on your journey!</p>
+		 <ul>
+			<li>Contact:</li>
+			<li>698 714 823</li>
+			<li>r.rzezniczek19@gmail.com</li>
+		</ul></p>
+	</div>
+</footer>
+<!--testowo-->
+<script>
+	let options = {
+		root: null,
+		rootMargin: '0px',
+		threshold:1.0
+	};
+	let callback =(entries,observer)=>{
+		entries.forEach(entry => {
+			if(entry.target.id=='myVideo')
+			{
+				if(entry.isIntersecting)
+				{
+					entry.target.play();
+				}
+				else{
+					entry.target.pause();
+				}
+			}
+		})
+	}
+	let observer = new IntersectionObserver(callback, options);
+	observer.observe(document.querySelector('#myVideo'));
+  </script>
+</body>
+</html>
