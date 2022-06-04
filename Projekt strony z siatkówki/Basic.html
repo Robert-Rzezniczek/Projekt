@@ -4,7 +4,7 @@
 	<title>Volleyball | All you've looked for.</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/Basic_main.css">
+	<link rel="stylesheet" href="scss/Basic_style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="shortcut icon" type="image/png" href="img/logo_r3.png">
 </head>
@@ -12,108 +12,100 @@
 <!--nav-->
 
 <div class="navigacja" >
-	<div class="container c_flex">
-			<h1 class="logo"><img src="img/logo_r3.png" alt="Logo"></h1>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="Drills.html">Drills</a></li>
-					<li><a href="Tips.html">Tips</a></li>
-					<li><a href="Basic.html">Basics </a></li>
+	<div class="navigacja__container c_flex">
+			<h1 class="navigacja__logo"><img class="navigacja__zdj" id="logoooo" src="img/logoR.png" alt="Logo"></h1>
+			<nav class="menu">
+				<ul class="menu__ul">
+					<li class="menu__li"><a class="menu__a" id="menu__a_1" href="index.html">Home</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_2" href="Tips.html">Tips</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_3" href="Basic.html">Basics</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_4" href="Drills.html">Drills</a></li>
+					<li class="menu__li"><button class="menu__button" id="menu__button" onclick="getKlik()">PL</button></li>
+
+					
 				</ul>
 			</nav>
+			
 	</div>
+	
 </div>
-
-
-
-
-
+<div class="dropdown">
+	<button class="dropdown__dropbtn" id="dropdown__dropbtn">Fast travel</button>
+	<div class="dropdown__content">
+	  <a class="dropdown__a" id="dropdown__a1" href="#start">Start</a>
+	  <a class="dropdown__a" id="dropdown__a2" href="#Bk">Rules</a>
+	  <a class="dropdown__a" id="dropdown__a3" href="#Positions">Positions</a>
+	  <a class="dropdown__a" id="dropdown__a4" href="Rotations.html">MORE</a>
+	  
+	</div>
+  </div>
 
 <!--main -->
 
 <main>
 	
-	
-	<div class="obszar">
-				
-		<h2 id="Rules">Basic knowledge</h2>
+<div class="obszar" id="start">
+				<br>
+		<h2 class="obszar__h2" id="Bk">Basic knowledge</h2>
+		<hr class="obszar__hr">
+		<p class="obszar__p" id="obszar__p"> First things first you need to understand the basics to have a wide and good foundation for more advanced skills.
+		 </p>
 		
-		<hr>
 		
-		
-<section id="Rules2"><h3>Rules</h3>
-	<br>
-		<ul class="ul">
-			<li>6 players on a team, 3 on the front row and 3 on the back row</li>
-			<li>Maximum of three hits(touches) for each team</li>
-			<li>Player may not hit(touch) the ball twice in succession (A block is not considered a hit)</li>
-			<li>If the ball touches the net the game is continued </li>
-			<li>A ball hitting a boundary line is "in"</li>
-			<li>Ball is "out" if it hits: 
-				<ul>
-					<li>an antennae</li>
-					<li>the floor completely outside the court</li>
-					<li>any of the net or cables outside the antennae</li>
-					<li>the referee stand or pole</li>
-					<li>the ceiling above a non-playable area</li>
-				</ul> 
-			</li>
-			<li>It is legal to contact the ball with any part of a players body</li>
-			<li>It is illegal to catch, hold, or throw the ball</li>
-			<li>After the serve, front line players may switch positions at the net</li>
-		</ul>
-		<br>
-	</section>
-
-<section id="Positions"><h3>Positions</h3>
-	<br>
-		
-	<p><b>Setters </b> have the task for orchestrating the offence of the team. They aim for the second touch and their main responsibility is to place the ball in the air where the attackers can place the ball into the opponents' court for a point. They have to be able to operate with the hitters, manage the tempo of their side of the court and choose the right attackers to set. Setters need to have a swift and skilful appraisal and tactical accuracy and must be quick at moving around the court. At elite level, setters used to usually be the shortest players of a team (before liberos were introduced), not being typically required to perform jump hits, but that would imply need for short-term replacemente by taller bench players when critical points required more effective blocks; in the 1990s taller setters (e.g. Fabio Vullo, Peter Blangé) became being deployed, in order to improve blocks.</p>
-	<br>
-	<p><b>Liberos</b> are defensive players who are responsible for receiving the attack or serve. They are usually the players on the court with the quickest reaction time and best passing skills. Libero means 'free' in Italian—they receive this name as they have the ability to substitute for any other player on the court during each play. They do not necessarily need to be tall, as they never play at the net, which allows shorter players with strong passing and defensive skills to excel in the position and play an important role in the team's success. A player designated as a libero for a match may not play other roles during that match. Liberos wear a different colour jersey than their teammates.</p>
-	<br>
-	<p><b>Middle blockers</b> or <b>Middle hitters</b> are players that can perform very fast attacks that usually take place near the setter. They are specialized in blocking since they must attempt to stop equally fast plays from their opponents and then quickly set up a double block at the sides of the court. In non-beginners play, every team will have two middle hitters. At elite levels, middle hitters are usually the tallest players, whose limited agility is countered by their height enabling more effective blocks.</p>
-	<br>
-	<p><b>Outside hitters</b> or <b>Left side hitters</b> attack from near the left antenna. The outside hitter is usually the most consistent hitter on the team and gets the most sets. Inaccurate first passes usually result in a set to the outside hitter rather than middle or opposite. Since most sets to the outside are high, the outside hitter may take a longer approach, always starting from outside the court sideline. In non-beginners play, there are again two outside hitters on every team in every match. At elite level, outside hitters are slightly shorter than middle hitters and outside hitters, but have the best defensive skills, therefore always re-placing to the middle while in the back row.</p>
-	<br>
-	<p><b>Opposite hitters</b> or <b>Right-side hitters</b> carry the defensive workload for a volleyball team in the front row. Their primary responsibilities are to put up a well-formed block against the opponents' Outside Hitters and serve as a backup setter. Sets to the opposite usually go to the right side of the antennae. Therefore, they are usually the most technical hitters since balls lifted to the right side are quicker and more difficult to handle (the setters having to place the ball while slightly off-set to the right, and with their back to the attacker), and also having to jump from the back row when the setter is on the front row. At elite level, until the 1990s several opposite hitters used to be able to also play as middle hitters (e.g. Andrea Zorzi, Andrea Giani), before high specialization curtained this flexibility in the role.</p>
-	</section>
-
-	<!-- <section id="o_1"><h3>###1</h3>
-		<hr>
-		<br>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit saepe veniam. Qui, corporis. Quis voluptas sed omnis suscipit nobis et neque aliquam deleniti vitae consequuntur quae, sit accusamus maxime.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit saepe veniam. Qui, corporis. Quis voluptas sed omnis suscipit nobis et neque aliquam deleniti vitae consequuntur quae, sit accusamus maxime.</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat suscipit saepe veniam. Qui, corporis. Quis voluptas sed omnis suscipit nobis et neque aliquam deleniti vitae consequuntur quae, sit accusamus maxime.</p>
-		<br>
-		</section> -->
-
-
-
-
-	</div>
-
-	<section class="odnosnik">
-		
-		<div class="podstrony">
-				<ul>
-					<li><div class="srodek"><div class="arrow"></div></div></li>
-					<li><a href="#Rules">Rules</a></li>
-					<li><a href="#Positions">Positions</a></li>
-					<li><a href="#o_1">#####1</a></li>
-					<li><a href="###">#####2</a></li>
-				</ul>
-				
-	
+		<section class="zasady" id="Rules">
+			<div class="zasady__srod">
+			<h3 class="zasady__h3" id="zasady__h3">Rules</h3>
+			<div class="zasady__sq" onclick="spr()"></div>
 		</div>
-
-		<div class="przycisk2"><a href="Rotations.html"><p id="Tekst"><b>MORE</b></p></a></div>
-
-
-	</section>
+			<br>
+			<ul id="zasady_ul" class="zasady__ul" >
+				<li class="zasady__li" id="zasady__1">6 players on a team, 3 on the front row and 3 on the back row</li>
+				<li class="zasady__li" id="zasady__2">Maximum of three hits(touches) for each team</li>
+				<li class="zasady__li" id="zasady__3">Player may not hit(touch) the ball twice in succession (A block is not considered a hit)</li>
+				<li class="zasady__li" id="zasady__4">If the ball touches the net the game is continued </li>
+				<li class="zasady__li" id="zasady__5">A ball hitting a boundary line is 'in'</li>
+				<li class="zasady__li" id="zasady__7">It is legal to contact the ball with any part of a players body</li>
+				<li class="zasady__li" id="zasady__8">It is illegal to catch, hold, or throw the ball</li>
+				<li class="zasady__li" id="zasady__9">After the serve, front line players may switch positions at the net</li>
+				<li class="zasady__li" id="zasady__6">Ball is 'out' if it hits: </li>
+					<ul class="zasady__ul2">
+						<li class="zasady__li2" id="zasady__10">an antennae</li>
+						<li class="zasady__li2" id="zasady__11">the floor completely outside the court</li>
+						<li class="zasady__li2" id="zasady__12">any of the net or cables outside the antennae</li>
+						<li class="zasady__li2" id="zasady__13">the referee stand or pole</li>
+						<li class="zasady__li2" id="zasady__14">the ceiling above a non-playable area</li>
+					</ul> 
+			</ul>
+			<br>
+			<br>
+		</section>
 	
+		<section class="pozycje" id="Positions">
+			<div class="pozycje__srod">
+			<h3 class="pozycje__h3" id="pozycje__h3">Positions</h3>
+			<div class="pozycje__sq" onclick="spr2()"></div>
+		</div>
+			<br>
+			<div class="pozycje__group" id="pozycje__group">
+			<p class="pozycje__p" id="pozycje__1"><b>Setters </b> have the task for orchestrating the offence of the team. They aim for the second touch and their main responsibility is to place the ball in the air where the attackers can place the ball into the opponents' court for a point. They have to be able to operate with the hitters, manage the tempo of their side of the court and choose the right attackers to set. Setters need to have a swift and skilful appraisal and tactical accuracy and must be quick at moving around the court. At elite level, setters used to usually be the shortest players of a team (before liberos were introduced), not being typically required to perform jump hits, but that would imply need for short-term replacemente by taller bench players when critical points required more effective blocks; in the 1990s taller setters (e.g. Fabio Vullo, Peter Blangé) became being deployed, in order to improve blocks.</p>
+			<br>
+			<p class="pozycje__p" id="pozycje__2"><b>Liberos</b> are defensive players who are responsible for receiving the attack or serve. They are usually the players on the court with the quickest reaction time and best passing skills. Libero means 'free' in Italian—they receive this name as they have the ability to substitute for any other player on the court during each play. They do not necessarily need to be tall, as they never play at the net, which allows shorter players with strong passing and defensive skills to excel in the position and play an important role in the team's success. A player designated as a libero for a match may not play other roles during that match. Liberos wear a different colour jersey than their teammates.</p>
+			<br>
+			<p class="pozycje__p" id="pozycje__3"><b>Middle blockers</b> or <b>Middle hitters</b> are players that can perform very fast attacks that usually take place near the setter. They are specialized in blocking since they must attempt to stop equally fast plays from their opponents and then quickly set up a double block at the sides of the court. In non-beginners play, every team will have two middle hitters. At elite levels, middle hitters are usually the tallest players, whose limited agility is countered by their height enabling more effective blocks.</p>
+			<br>
+			<p class="pozycje__p" id="pozycje__4"><b>Outside hitters</b> or <b>Left side hitters</b> attack from near the left antenna. The outside hitter is usually the most consistent hitter on the team and gets the most sets. Inaccurate first passes usually result in a set to the outside hitter rather than middle or opposite. Since most sets to the outside are high, the outside hitter may take a longer approach, always starting from outside the court sideline. In non-beginners play, there are again two outside hitters on every team in every match. At elite level, outside hitters are slightly shorter than middle hitters and outside hitters, but have the best defensive skills, therefore always re-placing to the middle while in the back row.</p>
+			<br>
+			<p class="pozycje__p" id="pozycje__5"><b>Opposite hitters</b> or <b>Right-side hitters</b> carry the defensive workload for a volleyball team in the front row. Their primary responsibilities are to put up a well-formed block against the opponents' Outside Hitters and serve as a backup setter. Sets to the opposite usually go to the right side of the antennae. Therefore, they are usually the most technical hitters since balls lifted to the right side are quicker and more difficult to handle (the setters having to place the ball while slightly off-set to the right, and with their back to the attacker), and also having to jump from the back row when the setter is on the front row. At elite level, until the 1990s several opposite hitters used to be able to also play as middle hitters (e.g. Andrea Zorzi, Andrea Giani), before high specialization curtained this flexibility in the role.</p>
+		</div>
+		</section>
 
+		<section class="zdjecia">
+			<div class="zdjecia__srod">
+				<img src="img/never_late.jpg" class="zdjecia__img" alt="zdj1"> 
+				<img src="img/boisko.jpg" class="zdjecia__img" alt="zdj2"> 
+			</div>
+		</section>
+</div>
 
 </main>
 
@@ -122,15 +114,225 @@
 <!--footer -->
 <footer>
 	<div class="stopka">
-		<p>Volley.org</p>
-		<p>Good luck on your journey!</p>
-		 <ul>
-			<li>Contact:</li>
-			<li>698 714 823</li>
-			<li>r.rzezniczek19@gmail.com</li>
+		<p class="stopka__p">Volley.org</p>
+		<p class="stopka__p" id="stopka__p_1">Good luck on your journey!</p>
+		 <ul class="stopka__ul">
+			<li class="stopka__li" id="stopka__li_1">Contact:</li>
+			<li class="stopka__li">698 714 823</li>
+			<li class="stopka__li">r.rzezniczek19@gmail.com</li>
 		</ul></p>
 	</div>
 </footer>
+
+<script>
+	
+	function getKlik()
+	{
+		//menu
+		let x1=document.getElementById("menu__a_1");
+		let x2=document.getElementById("menu__a_2");
+		let x3=document.getElementById("menu__a_3");
+		let x4=document.getElementById("menu__a_4");
+		let menu_translacja=document.getElementById("menu__button");
+
+		//start strony
+		let start=document.getElementById("Bk");
+		let dopisek=document.getElementById("obszar__p");
+		//pomocnicze przyciski
+
+		let przyc=document.getElementById("dropdown__dropbtn");
+		let op1=document.getElementById("dropdown__a1");
+		let op2=document.getElementById("dropdown__a2");
+		let op3=document.getElementById("dropdown__a3");
+		let op4=document.getElementById("dropdown__a4");
+
+
+		//zasady
+		let zasady=document.getElementById("zasady__h3");
+		let z1=document.getElementById("zasady__1");
+		let z2=document.getElementById("zasady__2");
+		let z3=document.getElementById("zasady__3");
+		let z4=document.getElementById("zasady__4");
+		let z5=document.getElementById("zasady__5");
+		let z6=document.getElementById("zasady__6");
+		let z7=document.getElementById("zasady__7");
+		let z8=document.getElementById("zasady__8");
+		let z9=document.getElementById("zasady__9");
+
+		let z10=document.getElementById("zasady__10");
+		let z11=document.getElementById("zasady__11");
+		let z12=document.getElementById("zasady__12");
+		let z13=document.getElementById("zasady__13");
+		let z14=document.getElementById("zasady__14");
+
+		//positions
+		let pozycje=document.getElementById("pozycje__h3");
+		
+
+		
+		let p1=document.getElementById("pozycje__1");
+		let p2=document.getElementById("pozycje__2");
+		let p3=document.getElementById("pozycje__3");
+		let p4=document.getElementById("pozycje__4");
+		let p5=document.getElementById("pozycje__5");
+
+
+
+
+		//stopka
+		let stopka_p=document.getElementById("stopka__p_1");
+		let stopka_li=document.getElementById("stopka__li_1");
+
+
+	
+	
+
+		
+
+		if(x1.innerHTML=="Home")
+		{
+			menu_translacja.innerHTML="EN"
+			x1.innerHTML="Główna"
+			x2.innerHTML="Porady"
+			x3.innerHTML="Podstawy"
+			x4.innerHTML="Ćwiczenia"
+
+			start.innerHTML="Podstawowa wiedza"
+			dopisek.innerHTML="Co z początku najważniejsze to, to żebyś zrozumiał/a podstawy, by mieć dobry fundament na przyszły rozwój."
+
+			przyc.innerHTML="Skrót"
+			op1.innerHTML="Początek"
+			op2.innerHTML="Zasady"
+			op3.innerHTML="Pozycje"
+			op4.innerHTML="Więcej"
+			
+			zasady.innerHTML="Zasady"
+			z1.innerHTML="6 graczy w drużynie, 3 z przodu i 3 z tyłu"
+			z2.innerHTML="Maksymalnie 3 dotknięcia piłki dla każdej drużyny"
+			z3.innerHTML="Jeden gracz nie może dotknąć piłki dwa razy w kolejności(blok nie jest liczony jako dotknięcie)"
+			z4.innerHTML="Jeżeli piłka dotknie siatki gra nie jest wstrzymywana"
+			z5.innerHTML="Piłka, która trafi w linię ograniczającą boisko jest liczona jako punkt"
+			z6.innerHTML="Piłka jest autowa, jeżeli uderzy/dotknie:"
+				z10.innerHTML="jedną z anten"
+				z11.innerHTML="parkiet/podłożę/ziemię kompletnie poza boiskiem"
+				z12.innerHTML="którą kolwiek część siatki od zewnętrznej strony anten"
+				z13.innerHTML="stanowisko sędziego czy też słupek"
+				z14.innerHTML="sufit w miejscu, którego granice boiska nie obejmują"
+			z7.innerHTML="Nie ma restrykcji odnośnie cześci ciała, którą chcemy odbić piłkę"
+			z8.innerHTML="Legalne nie jest łapanie, trzymanie czy też rzucanie piłką"
+			z9.innerHTML="Po zagrywce zawodnicy mogą zmienić pozycje na boisku"
+
+
+			pozycje.innerHTML="Pozycje"
+			p1.innerHTML="<b>Rozgrywający</b> ma za zadanie zarządzanie ofensywą drużyny. Przejmują drugi kontakt z piłką i ich główną odpowiedzialnością jest rozegranie piłki tak aby umożliwić atakującym zdobycie punktu. Muszą być w stanie współpracować z atakującymi, kontrolować tempo ich drużyny i rozsądnie wybierać najlepsze opcje ataku w trakcie meczu. Muszą oni być szybcy i trafną ocenę sytuacji oraz dokładność, muszą też być w stanie szybko i płynnie się poruszać. Rozgrywający na wysokim poziomie zazwyczaj byli niższymi zawodnikami w drużynie, co zmieniło się jednak gdy zwiększyła się potrzeba umocnienia bloku."
+			p2.innerHTML="<b>Libero</b> to defensywni gracze, którzy odpowiadają za wszelkie typy przyjmowania ataków. Zazwyczaj są to gracze z najlepszymi czasami reakcji i najwyższymi umiejętnościami przyjęcia. Po włosku 'Libero' znaczy wolny, wzieło się to z tegom, że jako jedyni mogą zmienić się w meczu z każdym graczem w każdym momencie. Nie muszą być to osoby wysokie, ze względu na fakt, że nie grają na siatce. Noszą oni zazwyczaj inny kolor stroju."
+			p3.innerHTML="<b>Środkowy atakujący</b> czy też <b>Środek</b> to pozycja dla graczy, którzy specjalizują się w szybkich atakach ze środka oraz mają wysokie umiejętności blokowania. Wspomagają skrzydła dochodząc szybko do nich jako druga osoba na blok. Są przeciętnie najwyższymi zawodnikami w drużynie."
+			p4.innerHTML="<b>Atakujący(lewe skrzydło)</b> zajmują się atakiem z lewej strony boiska. Przyjeło się, że atakujący z lewej strony jest tym najbardziej stabilnym atakującym w całym meczu więc też dostaje najwięcej rozegrań. Bardzo często niedokładne przyjęcia kończą się w rozegraniu na lewą strone boiska do owego zawodnika. Na wyższym poziomie zawodnicy Ci specjalizują się także w defensywie, więc kiedy znajdują się w pierwszym rzędzie na środku podczas zagrywki modyfikowane jest ustawienie zawodników zgodnie z zasadami rotacji by mógł odegrać swoją rolę jako przyjmujący."
+			p5.innerHTML="<b>Atakujący(prawe skrzydło)</b> zajmują się oni defensywą przedniej części boiska. Mianowicie ich głównym zadaniem jest blokowanie lewego skrzydła przeciwnej drużyny. Atak na tej stronie jest trochę zróżnicowany i wymaga więcej technicznego podejścia od zawodnika. Mogą oni pełnić rolę typowo defensywną czy też być 'głównym działem' drużyny "
+			
+
+			stopka_p.innerHTML="Powodzenia w rozwijaniu się!"
+			stopka_li.innerHTML="Kontakt:"
+			
+		}
+		else 
+		{
+			menu_translacja.innerHTML="PL"
+			x1.innerHTML="Home"
+			x2.innerHTML="Tips"
+			x3.innerHTML="Basics"
+			x4.innerHTML="Drills"
+
+			start.innerHTML="Basic knowledge"
+			dopisek.innerHTML="First things first you need to understand the basics to have a wide and good foundation for more advanced skills."
+
+			przyc.innerHTML="Fast travel"
+			op1.innerHTML="Start"
+			op2.innerHTML="Rules"
+			op3.innerHTML="Positions"
+			op4.innerHTML="MORE"
+
+			zasady.innerHTML="Rules"
+			z1.innerHTML="6 players on a team, 3 on the front row and 3 on the back row"
+			z2.innerHTML="Maximum of three hits(touches) for each team"
+			z3.innerHTML="Player may not hit(touch) the ball twice in succession (A block is not considered a hit)"
+			z4.innerHTML="If the ball touches the net the game is continued"
+			z5.innerHTML="A ball hitting a boundary line is 'in'"
+			z6.innerHTML="Ball is 'out' if it hits:"
+			z7.innerHTML="It is legal to contact the ball with any part of a players body"
+			z8.innerHTML="It is illegal to catch, hold, or throw the ball"
+			z9.innerHTML="After the serve, front line players may switch positions at the net"
+			z10.innerHTML="an antennae"
+			z11.innerHTML="the floor completely outside the court"
+			z12.innerHTML="any of the net or cables outside the antennae"
+			z13.innerHTML="the referee stand or pole"
+			z14.innerHTML="the ceiling above a non-playable area"	
+
+
+			pozycje.innerHTML="Positions"
+			p1.innerHTML="<b>Setters </b> have the task for orchestrating the offence of the team. They aim for the second touch and their main responsibility is to place the ball in the air where the attackers can place the ball into the opponents' court for a point. They have to be able to operate with the hitters, manage the tempo of their side of the court and choose the right attackers to set. Setters need to have a swift and skilful appraisal and tactical accuracy and must be quick at moving around the court. At elite level, setters used to usually be the shortest players of a team (before liberos were introduced), not being typically required to perform jump hits, but that would imply need for short-term replacemente by taller bench players when critical points required more effective blocks; in the 1990s taller setters (e.g. Fabio Vullo, Peter Blangé) became being deployed, in order to improve blocks."
+			p2.innerHTML="<b>Liberos</b> are defensive players who are responsible for receiving the attack or serve. They are usually the players on the court with the quickest reaction time and best passing skills. Libero means 'free' in Italian—they receive this name as they have the ability to substitute for any other player on the court during each play. They do not necessarily need to be tall, as they never play at the net, which allows shorter players with strong passing and defensive skills to excel in the position and play an important role in the team's success. A player designated as a libero for a match may not play other roles during that match. Liberos wear a different colour jersey than their teammates."
+			p3.innerHTML="<b>Middle blockers</b> or <b>Middle hitters</b> are players that can perform very fast attacks that usually take place near the setter. They are specialized in blocking since they must attempt to stop equally fast plays from their opponents and then quickly set up a double block at the sides of the court. In non-beginners play, every team will have two middle hitters. At elite levels, middle hitters are usually the tallest players, whose limited agility is countered by their height enabling more effective blocks."
+			p4.innerHTML="<b>Outside hitters</b> or <b>Left side hitters</b> attack from near the left antenna. The outside hitter is usually the most consistent hitter on the team and gets the most sets. Inaccurate first passes usually result in a set to the outside hitter rather than middle or opposite. Since most sets to the outside are high, the outside hitter may take a longer approach, always starting from outside the court sideline. In non-beginners play, there are again two outside hitters on every team in every match. At elite level, outside hitters are slightly shorter than middle hitters and outside hitters, but have the best defensive skills, therefore always re-placing to the middle while in the back row."
+			p5.innerHTML="<b>Opposite hitters</b> or <b>Right-side hitters</b> carry the defensive workload for a volleyball team in the front row. Their primary responsibilities are to put up a well-formed block against the opponents' Outside Hitters and serve as a backup setter. Sets to the opposite usually go to the right side of the antennae. Therefore, they are usually the most technical hitters since balls lifted to the right side are quicker and more difficult to handle (the setters having to place the ball while slightly off-set to the right, and with their back to the attacker), and also having to jump from the back row when the setter is on the front row. At elite level, until the 1990s several opposite hitters used to be able to also play as middle hitters (e.g. Andrea Zorzi, Andrea Giani), before high specialization curtained this flexibility in the role."
+
+			
+			stopka_p.innerHTML="Good luck on your journey!"
+			stopka_li.innerHTML="Contact:"
+		}
+	}
+
+	function spr()
+	{
+		let zmienna=document.getElementById("zasady_ul");
+		let bordery=document.getElementById("Rules");
+		
+		
+		if(zmienna.className=="zasady__ul")
+		{
+			zmienna.className="zasady__ul_znik"
+			bordery.style.borderLeft="0px solid black";
+			bordery.style.borderRight="0px solid black";
+			bordery.style.borderBottom="0px solid black";
+			
+			// bordery.style.backgroundColor="none";
+
+		}
+		else
+		{
+			zmienna.className="zasady__ul";
+			bordery.style.borderLeft="1px solid black";
+			bordery.style.borderRight="1px solid black";
+			bordery.style.borderBottom="1px solid black";
+			
+			// bordery.style.backgroundColor='#FFF947';
+		}
+	}
+	function spr2()
+	{
+		let zmienna=document.getElementById("pozycje__group");
+		let bordery2=document.getElementById("Positions");
+
+		
+		if(zmienna.className=="pozycje__group")
+		{
+			zmienna.className="pozycje__group_znik";
+			bordery2.style.borderLeft="0px solid black";
+			bordery2.style.borderRight="0px solid black";
+			bordery2.style.borderBottom="0px solid black";
+		}
+		else
+		{
+			zmienna.className="pozycje__group";
+			bordery2.style.borderLeft="1px solid black";
+			bordery2.style.borderRight="1px solid black";
+			bordery2.style.borderBottom="1px solid black";
+		}
+	
+		
+	}
+
+  </script>
 
 </body>
 </html>

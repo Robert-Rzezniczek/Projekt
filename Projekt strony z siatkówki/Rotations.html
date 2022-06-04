@@ -4,7 +4,7 @@
 	<title>Volleyball | All you've looked for.</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/Rotations_main.css">
+	<link rel="stylesheet" href="scss/Rotations_style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="shortcut icon" type="image/png" href="img/logo_r3.png">
 </head>
@@ -12,19 +12,35 @@
 <!--nav-->
 
 <div class="navigacja" >
-	<div class="container c_flex">
-			<h1 class="logo"><img src="img/logo_r3.png" alt="Logo"></h1>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="Tips.html">Tips</a></li>
-					<li><a href="Drills.html">Drills</a></li>
-					<li><a href="Basic.html">Basic </a></li>
+	<div class="navigacja__container c_flex">
+			<h1 class="navigacja__logo"><img class="navigacja__zdj" src="img/logoR.png" alt="Logo"></h1>
+			<nav class="menu">
+				<ul class="menu__ul">
+					<li class="menu__li"><a class="menu__a" id="menu__a_1" href="index.html">Home</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_2" href="Tips.html">Tips</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_3" href="Basic.html">Basics</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_4" href="Drills.html">Drills</a></li>
+					<li class="menu__li"><button class="menu__button" id="menu__button" onclick="getKlik()">PL</button></li>
+
+					
 				</ul>
 			</nav>
+			
 	</div>
+	
 </div>
 
+<div class="dropdown">
+	<button class="dropdown__dropbtn" id="dropdown__dropbtn">Fast travel</button>
+	<div class="dropdown__content">
+	  <a class="dropdown__a" id="dropdown__a1" href="#obszar__h2">Start</a>
+	  <a class="dropdown__a" id="dropdown__a2" href="#Legend">Legend</a>
+	  <a class="dropdown__a" id="dropdown__a3" href="#F60">6-0/6-6</a>
+	  <a class="dropdown__a" id="dropdown__a4" href="#F51">5-1</a>
+	  <a class="dropdown__a" id="dropdown__a5" href="#F42">4-2</a>
+	  
+	</div>
+  </div>
 
 
 
@@ -37,69 +53,77 @@
 	
 	<div class="obszar">
 				
-		<h2 id="Rotations">Rotations</h2>
+		<h2 class="obszar__h2" id="obszar__h2">Rotations</h2>
 		<section class="Rotations">
-			<h3 >What is an rotation?</h3>
+			<h3 class="Rotations__h3" id="Rotations__h3" >What is an rotation?</h3>
 			<br>
-			<p>A rotation occurs after every sideout, which is when the receiving team gains the right to serve by winning a rally. So basically, if you are the receiving team, and you win the point, or the serving team commits an unforced error, the players are required to rotate and the serve is switched.</p>
-			<div class="zdj"><img src="img/siatka.png" alt="pitch"></div>
+			<p class="Rotations__p" id="Rotations__p">A rotation occurs after every sideout, which is when the receiving team gains the right to serve by winning a rally. So basically, if you are the receiving team, and you win the point, or the serving team commits an unforced error, the players are required to rotate and the serve is switched.</p>
+			<div class="Rotations__zdj"><img class="Rotations__img" src="img/siatka.png" alt="pitch"></div>
 
 			
 			<br>
 		</section>
 
-		<section id="Legend">
+		<section class="Legenda" id="Legend">
 			<br>
-			<h3>Legend</h3>	
-			<div class="legenda"><div id="P">P</div><p> - Player that is not currently a setter in rotation and that can defend,attack.</p></div>
-			<div class="legenda"><div id="OH">OH</div><p> -  Outside Hitter</p></div>
-			<div class="legenda"><div id="RS">RS</div><p> -  Rightside Hitter</p></div>
-			<div class="legenda"><div id="MB">MB</div><p> -  Middle Blocker/MIddle Hitter</p></div>
-			<div class="legenda"><div id="L">L</div><p> -  Libero</p></div>
-			<div class="legenda"><div id="S">S</div><p> -  Setter</p></div>
-			<div class="legenda"><div id="PS">P/S</div><p> -  Player/Setter at front plays the role of the setter, at back plays the role of a player.</p></div>
+			<br>
+			<br>
+			<h3 class="Legenda__h3" id="Legenda__h3">Legend</h3>	
+			<div class="Legenda__div"><div class="Legenda__obj" id="P">P</div><p class="Legenda__p"> - Player that is not currently a setter in rotation and that can defend,attack.</p></div>
+			<div class="Legenda__div"><div class="Legenda__obj" id="OH">OH</div><p class="Legenda__p"> -  Outside Hitter</p></div>
+			<div class="Legenda__div"><div class="Legenda__obj" id="RS">RS</div><p class="Legenda__p"> -  Rightside Hitter</p></div>
+			<div class="Legenda__div"><div class="Legenda__obj" id="MB">MB</div><p class="Legenda__p"> -  Middle Blocker/Middle Hitter</p></div>
+			<div class="Legenda__div"><div class="Legenda__obj" id="L">L</div><p class="Legenda__p"> -  Libero</p></div>
+			<div class="Legenda__div"><div class="Legenda__obj" id="S">S</div><p class="Legenda__p"> -  Setter</p></div>
+			<div class="Legenda__div"><div class="Legenda__obj" id="PS">P/S</div><p class="Legenda__p"> -  Player/Setter at front plays the role of the setter, at back plays the role of a player.</p></div>
 			<br>
 
 		</section>
 
 		<section id="Formations">
-			<section class="Formation_info">
-				<h2 >Formations</h2>
+			<section class="FInfo">
+				<h2 class="FInfo__h2" id="FInfo__h2" >Formations</h2>
 				<br>
-				<p>There are quite a few formations in volleyball which are used. Below you can see a few of them.</p>
+				<p class="FInfo__p" id="FInfo__p">There are quite a few formations in volleyball which are used. Below you can see a few of them.</p>
 
 				<br>
 			</section>
 			
 
-			<section id="F60">
+			<section class="Form" id="F60">
 				<br>
-				<h3 >Formation 6-0/6-6</h3>
+				<br>
+				<div class="Form__caly">
+				<h3 class="Form__h3" id="Form__h3" >Formation 6-0/6-6</h3>
 				<!-- <br> -->
-				<p>The formation 6-0 is the most elementary formation. When the receiving team has gained the right to serve, its players rotate one position clock-wise. In this formation everyone sets, defends and attacks equally and therefore this formation does not utilize player expertise. The player standing on zone 3 in the current rotation is the setter (S - highlighted in yellow color). Use this easy formation for new players so they can focus on improving their techniques and try each position.</p>
-				<div class="boisko">
-					<div class="pozycja"><div id="P"><a href="#Legend">P</a></div></div>
-					<div class="pozycja"><div id="S"><a href="#Legend">S</a></div></div>
-					<div class="pozycja"><div id="P"><a href="#Legend">P</a></div></div>
-					<div class="pozycja"><div id="P"><a href="#Legend">P</a></div></div>
-					<div class="pozycja"><div id="P"><a href="#Legend">P</a></div></div>
-					<div class="pozycja"><div id="P"><a href="#Legend">P</a></div></div>
+				<p class="Form__p" id="Form__p">The formation 6-0 is the most elementary formation. When the receiving team has gained the right to serve, its players rotate one position clock-wise. In this formation everyone sets, defends and attacks equally and therefore this formation does not utilize player expertise. The player standing on zone 3 in the current rotation is the setter (S - highlighted in yellow color). Use this easy formation for new players so they can focus on improving their techniques and try each position.</p>
+				</div>
+				<div class="Form__div">
+					<div class="Form__pozycja"><div class="Form__poz" id="P"><a class="Form__a" href="#Legend">P</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="S"><a class="Form__a" href="#Legend">S</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="P"><a class="Form__a" href="#Legend">P</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="P"><a class="Form__a" href="#Legend">P</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="P"><a class="Form__a" href="#Legend">P</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="P"><a class="Form__a" href="#Legend">P</a></div></div>
 
 				</div>
 
 
-				<section id="F51">
+				<section class="Form" id="F51">
 					<br>
-					<h3>Formation 5-1</h3>
 					<br>
-					<p>The formation 5-1 is an advanced formation where the team has 1 setter (S - highlighted in yellow color) and 5 hitters. In this formation the Right Side Hitter will not receive serves. Also see the less advanced Formation 5-1: Right Side Hitter Receives where the Right Side Hitter player receive serves. Keep in mind that fewer expertise means more focused training on specific skill sets.</p>
-					<div class="boisko">
-						<div class="pozycja"><div id="OH"><a href="#Legend">OH</a></div></div>
-						<div class="pozycja"><div id="MB"><a href="#Legend">MB</a></div></div>
-						<div class="pozycja"><div id="RS"><a href="#Legend">RS</a></div></div>
-						<div class="pozycja"><div id="OH"><a href="#Legend">OH</a></div></div>
-						<div class="pozycja"><div id="L"><a href="#Legend">L</a></div></div>
-						<div class="pozycja"><div id="S"><a href="#Legend">S</a></div></div>
+					<div class="Form__caly">
+					<h3 class="Form__h3" id="Form__h32">Formation 5-1</h3>
+					<br>
+					<p class="Form__p" id="Form__p2">The formation 5-1 is an advanced formation where the team has 1 setter (S - highlighted in yellow color) and 5 hitters. In this formation the Right Side Hitter will not receive serves. Also see the less advanced Formation 5-1: Right Side Hitter Receives where the Right Side Hitter player receive serves. Keep in mind that fewer expertise means more focused training on specific skill sets.</p>
+					</div>
+					<div class="Form__div">
+						<div class="Form__pozycja"><div class="Form__poz"  id="OH"><a class="Form__a" href="#Legend">OH</a></div></div>
+						<div class="Form__pozycja"><div class="Form__poz" id="MB"><a class="Form__a" href="#Legend">MB</a></div></div>
+						<div class="Form__pozycja"><div class="Form__poz" id="RS"><a class="Form__a" href="#Legend">RS</a></div></div>
+						<div class="Form__pozycja"><div class="Form__poz" id="OH"><a class="Form__a" href="#Legend">OH</a></div></div>
+						<div class="Form__pozycja"><div class="Form__poz" id="L"><a class="Form__a" href="#Legend">L</a></div></div>
+						<div class="Form__pozycja"><div class="Form__poz" id="S"><a class="Form__a" href="#Legend">S</a></div></div>
 						
 	
 					</div>
@@ -108,24 +132,27 @@
 				<br>
 			</section>	
 
-			<section id="F42">
+			<section class="Form" id="F42">
 				<br>
-				<h3>Formation 4-2</h3>
 				<br>
-				<p>The formation 4-2 is an easy formation that utilizes 2 dedicated setters. The setter (S1 or S2 - highlighted in blue color) in the front will set the balls from zone 2 and the 2nd setter in the back will play as a back player until he or she becomes a front player. Consider starting with basic rotation and then upgrading to this formation for volleyball beginners. Useful when at least 2 players on the team wants to specialise in setting.</p>
-				<div class="boisko">
-					<div class="pozycja"><div id="P"><a href="#Legend">P</a></div></div>
-					<div class="pozycja"><div id="S"><a href="#Legend">S</a></div></div>
-					<div class="pozycja"><div id="P"><a href="#Legend">P</a></div></div>
-					<div class="pozycja"><div id="P"><a href="#Legend">P</a></div></div>
-					<div class="pozycja"><div id="PS"><a href="#Legend">P/S</a></div></div>
-					<div class="pozycja"><div id="P"><a href="#Legend">P</a></div></div>
+				<div class="Form__caly">
+				<h3 class="Form__h3" id="Form__h33">Formation 4-2</h3>
+				<br>
+				<p class="Form__p" id="Form__p3">The formation 4-2 is an easy formation that utilizes 2 dedicated setters. The setter (S1 or S2 - highlighted in blue color) in the front will set the balls from zone 2 and the 2nd setter in the back will play as a back player until he or she becomes a front player. Consider starting with basic rotation and then upgrading to this formation for volleyball beginners. Useful when at least 2 players on the team wants to specialise in setting.</p>
+				</div>
+				<div class="Form__div">
+					<div class="Form__pozycja"><div class="Form__poz"  id="P"><a class="Form__a" href="#Legend">P</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="S"><a class="Form__a" href="#Legend">S</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="P"><a class="Form__a" href="#Legend">P</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="P"><a class="Form__a" href="#Legend">P</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="PS"><a class="Form__a" href="#Legend">P/S</a></div></div>
+					<div class="Form__pozycja"><div class="Form__poz" id="P"><a class="Form__a" href="#Legend">P</a></div></div>
 
 				</div>
 			
-			<!-- <img src="img/boisko.png" alt="pitch"> -->
-			<br>
-		</section>
+				<!-- <img src="img/boisko.png" alt="pitch"> -->
+				<br>
+			</section>
 			
 			
 			
@@ -134,7 +161,7 @@
 		
 	</div>
 
-	<section class="odnosnik">
+	<!-- <section class="odnosnik">
 		
 		<div class="podstrony">
 			
@@ -150,10 +177,10 @@
 	
 		</div>
 
-		<!-- <div class="przycisk2"></div> -->
+		 <div class="przycisk2"></div> 
 
 
-	</section>
+	</section> -->
 	
 
 
@@ -164,15 +191,171 @@
 <!--footer -->
 <footer>
 	<div class="stopka">
-		<p>Volley.org</p>
-		<p>Good luck on your journey!</p>
-		 <ul>
-			<li>Contact:</li>
-			<li>698 714 823</li>
-			<li>r.rzezniczek19@gmail.com</li>
+		<p class="stopka__p">Volley.org</p>
+		<p class="stopka__p" id="stopka__p_1">Good luck on your journey!</p>
+		 <ul class="stopka__ul">
+			<li class="stopka__li" id="stopka__li_1">Contact:</li>
+			<li class="stopka__li">698 714 823</li>
+			<li class="stopka__li">r.rzezniczek19@gmail.com</li>
 		</ul></p>
 	</div>
 </footer>
+<script>
+	function getKlik()
+	{
+		//menu
+		let x1=document.getElementById("menu__a_1");
+		let x2=document.getElementById("menu__a_2");
+		let x3=document.getElementById("menu__a_3");
+		let x4=document.getElementById("menu__a_4");
+		let menu_translacja=document.getElementById("menu__button");
+		
+		//pomocnicze przyciski
+
+		let przyc=document.getElementById("dropdown__dropbtn");
+		let op1=document.getElementById("dropdown__a1");
+		let op2=document.getElementById("dropdown__a2");
+		let op3=document.getElementById("dropdown__a3");
+		let op4=document.getElementById("dropdown__a4");
+		let op5=document.getElementById("dropdown__a5");
+
+		//main
+
+		let start=document.getElementById("obszar__h2");
+		let ngl=document.getElementById("Rotations__h3");
+
+		let rtekst=document.getElementById("Rotations__p");
+
+		let Lh3=document.getElementById("Legenda__h3");
+
+		let p1=document.getElementsByClassName("Legenda__p")[0];
+		let p2=document.getElementsByClassName("Legenda__p")[1];
+		let p3=document.getElementsByClassName("Legenda__p")[2];
+		let p4=document.getElementsByClassName("Legenda__p")[3];
+		let p5=document.getElementsByClassName("Legenda__p")[4];
+		let p6=document.getElementsByClassName("Legenda__p")[5];
+		let p7=document.getElementsByClassName("Legenda__p")[6];
+
+		let Fi=document.getElementById("FInfo__h2");
+		let Fip=document.getElementById("FInfo__p");
+		
+		let F60=document.getElementById("Form__h3");
+		let F60p=document.getElementById("Form__p");
+
+		let F51=document.getElementById("Form__h32");
+		let F51p=document.getElementById("Form__p2");
+
+		let F42=document.getElementById("Form__h33");
+		let F42p=document.getElementById("Form__p3");
+
+
+
+
+		//stopka
+		let stopka_p=document.getElementById("stopka__p_1");
+		let stopka_li=document.getElementById("stopka__li_1");
+
+
+		
+
+		if(x1.innerHTML=="Home")
+		{
+			menu_translacja.innerHTML="EN"
+			x1.innerHTML="Główna"
+			x2.innerHTML="Porady"
+			x3.innerHTML="Podstawy"
+			x4.innerHTML="Ćwiczenia"
+
+			
+			przyc.innerHTML="Skrót"
+			 op1.innerHTML="Początek"
+			 op2.innerHTML="Legenda"
+			 op3.innerHTML="6-0/6-6"
+			 op4.innerHTML="5-1"
+			 op5.innerHTML="4-2"
+			
+		
+			start.innerHTML="Rotacje"
+			ngl.innerHTML="Co to rotacja?"
+			rtekst.innerHTML="Rotacja następuje, gdy drużyna odbierająca uzyskuje prawo do zagrywki. Tak więc, w zasadzie, jeśli jesteś drużyną odbierającą i zdobywasz punkt, lub drużyna serwująca popełni niewymuszony błąd, gracze są zobowiązani do rotacji, a osoba serwująca jest zmieniana."
+
+			Lh3.innerHTML="Legenda"
+			p1.innerHTML=" - gracz, który obecnie nie pełni roli rozgrywającego i może atakować/przyjmować"
+			p2.innerHTML=" - lewe skrzydło"
+			p3.innerHTML=" - prawe skrzydło"
+			p4.innerHTML=" - środkowy"
+			p5.innerHTML=" - libero"
+			p6.innerHTML=" - rozgrywający"
+			p7.innerHTML=" - gracz/rozgrywający, w pierwszym rzędzie pełni rolę rozgrywającego, a w drugi pełni rolę gracza"
+		
+			Fi.innerHTML="Formacje"
+			Fip.innerHTML="W siatkówce występuje trochę typów formacji. Poniżej możesz zobaczyć parę z nich."
+
+			F60.innerHTML="Formacja 6-0/6-6"
+			F60p.innerHTML="Formacja 6-0 to najbardziej elementarna formacja. Kiedy drużyna odbierająca uzyska prawo do zagrywki, jej zawodnicy obracają się o jedną pozycję zgodnie z ruchem wskazówek zegara. W tej formacji wszyscy ustawiają się, bronią i atakują równo i dlatego formacja ta nie wykorzystuje wiedzy graczy. Gracz stojący w strefie 3 w aktualnej rotacji jest rozgrywającym (S - podświetlony na żółto). Ta łatwa formacja jest przyjazna dla nowych graczy, gdyż mogą wypróbować każdą pozycję i mogą skupić się na doskonaleniu swoich podstaw ."
+
+			F51.innerHTML="Formacja 5-1"
+			F51p.innerHTML="Formacja 5-1 to formacja zaawansowana, w której drużyna ma 1 rozgrywającego (S - zaznaczony na żółto) i 5 uderzających. W tej formacji napastnik z prawej strony nie będzie przyjmował. Mniej zaawansowaną Formację 5-1, to ta w której prawy napastnik przyjmuje zagrywki.  Pamiętaj, że taki podział daje większą możliwość koncentracji i ćwiczenia określonych zestawach umiejętności."
+
+			F42.innerHTML="Formacja 4-2"
+			F42p.innerHTML="Formacja 4-2 to łatwa formacja, która wykorzystuje 2 dedykowanych rozgrywających. Seter (S1 lub S2 - podświetlony na niebiesko) z przodu będzie ustawiał piłki ze strefy 2, a drugi rozgrywający z tyłu będzie grał jako obrońca, dopóki nie zostanie graczem z przodu. "
+
+			stopka_p.innerHTML="Powodzenia w rozwijaniu się!"
+			stopka_li.innerHTML="Kontakt:"
+			
+		}
+		else 
+		{
+			menu_translacja.innerHTML="PL"
+			x1.innerHTML="Home"
+			x2.innerHTML="Tips"
+			x3.innerHTML="Basics"
+			x4.innerHTML="Drills"
+
+			
+			 przyc.innerHTML="Fast travel"
+			 op1.innerHTML="Start"
+			 op2.innerHTML="Legend"
+			 op3.innerHTML="6-0/6-6"
+			 op4.innerHTML="5-1"
+			 op5.innerHTML="4-2"
+
+		
+			start.innerHTML="Rotations"
+			ngl.innerHTML="What is an rotation?"
+			rtekst.innerHTML="A rotation occurs after every sideout, which is when the receiving team gains the right to serve by winning a rally. So basically, if you are the receiving team, and you win the point, or the serving team commits an unforced error, the players are required to rotate and the serve is switched."
+
+			Lh3.innerHTML="Legend"
+			p1.innerHTML=" -  Player that is not currently a setter in rotation and that can defend,attack."
+			p2.innerHTML=" -  Outside Hitter"
+			p3.innerHTML=" -  Rightside Hitter "
+			p4.innerHTML=" -  Middle Blocker/Middle Hitter"
+			p5.innerHTML=" -  Libero"
+			p6.innerHTML=" -  Setter"
+			p7.innerHTML=" -  Player/Setter at front plays the role of the setter, at back plays the role of a player."
+		
+			Fi.innerHTML="Formations"
+			Fip.innerHTML="There are quite a few formations in volleyball which are used. Below you can see a few of them."
+
+			F60.innerHTML="Formation 6-0/6-6"
+			F60p.innerHTML="The formation 6-0 is the most elementary formation. When the receiving team has gained the right to serve, its players rotate one position clock-wise. In this formation everyone sets, defends and attacks equally and therefore this formation does not utilize player expertise. The player standing on zone 3 in the current rotation is the setter (S - highlighted in yellow color). Use this easy formation for new players so they can focus on improving their techniques and try each position."
+
+			F51.innerHTML="Formation 5-1"
+			F51p.innerHTML="The formation 5-1 is an advanced formation where the team has 1 setter (S - highlighted in yellow color) and 5 hitters. In this formation the Right Side Hitter will not receive serves. Also see the less advanced Formation 5-1: Right Side Hitter Receives where the Right Side Hitter player receive serves. Keep in mind that fewer expertise means more focused training on specific skill sets."
+
+			F42.innerHTML="Formation 4-2"
+			F42p.innerHTML="The formation 4-2 is an easy formation that utilizes 2 dedicated setters. The setter (S1 or S2 - highlighted in blue color) in the front will set the balls from zone 2 and the 2nd setter in the back will play as a back player until he or she becomes a front player. Consider starting with basic rotation and then upgrading to this formation for volleyball beginners. Useful when at least 2 players on the team wants to specialise in setting."
+
+			stopka_p.innerHTML="Good luck on your journey!"
+			stopka_li.innerHTML="Contact:"
+		}
+	}
+
+
+
+
+
+</script>
 
 </body>
 </html>

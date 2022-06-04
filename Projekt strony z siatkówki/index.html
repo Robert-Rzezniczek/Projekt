@@ -4,88 +4,95 @@
 	<title>Volleyball | All you've looked for.</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/main.css">
+	<!-- <link rel="stylesheet" href="css/main.css"> -->
+	<link rel="stylesheet" href="scss/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="shortcut icon" type="image/png" href="img/logo_r3.png">
 </head>
+
 <body>
 	<div class="tlo">
-	<div class="glowne"></div>
+	<div class="tlo__glowne"></div>
 </div>
+
 <!--nav-->
 
 <div class="navigacja" >
-	<div class="container c_flex">
-			<h1 class="logo"><img src="img/logo_r3.png" alt="Logo"></h1>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="Tips.html">Tips</a></li>
-					<li><a href="Basic.html">Basics</a></li>
-					<li><a href="Drills.html">Drills</a></li>
+	<div class="navigacja__container c_flex">
+			<h1 class="navigacja__logo"><img class="navigacja__zdj" src="img/logoR.png" alt="Logo"></h1>
+			<nav class="menu">
+				<ul class="menu__ul">
+					<li class="menu__li"><a class="menu__a" id="menu__a_1" href="index.html">Home</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_2" href="Tips.html">Tips</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_3" href="Basic.html">Basics</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_4" href="Drills.html">Drills</a></li>
+					<li class="menu__li"><button class="menu__button" id="menu__button" onclick="getKlik()">PL</button></li>
 				</ul>
 			</nav>
 	</div>
 </div>
 
 
-<!-- <div class="tlo">
-	<div class="glowne"></div>
-</div> -->
+
 <!--main -->
 <br>
 <br>
 <main>
-	
-	<h2><b>Before we start</b></h2>
-	<p class="wstep">Our website will help you with lack of informations, drills and tips on how to become better at volleyball. </p>
+	<div class="start">
+		<h2 class="start__h2" id="start__h2"><b>Before we start</b></h2>
+		<p class="start__p" id="start__p">Our website will help you with lack of informations, drills and tips on how to become better at volleyball. </p>
+	</div>
 	<div class="zapoznanie">
-		<section class="p_m">
-			<h3>Drills</h3>
-			<p>On our website you can find drills for overall improvement and for exact postisions you may want to get better at.</p>
-			<video id="myVideo" controls width="500" muted>
+		<section class="section">
+			<h3 class="section__h3" id="section__h3_1">Drills</h3>
+			<video class="section__video" id="myVideo" controls width="500" muted>
 				<source src="Video/The_Whip.mp4" type="video/mp4">
 			  </video>
+			  <p class="section__p" id="section__p_1">On our website you can find drills for overall improvement and for exact postisions you may want to get better at.</p>
 		</section>
 
-		<section class="d_m">
-			<h3>Basic knowledge</h3>
-			<p>You can also find some basic informations about positions, rules and also some advanced knowledge such as rotations, tactics and so on.</p>
-			<img  id="strategy" src="img/Basic_knowledge.jpg" alt="Strategy">
+		<section class="section">
+			<h3 class="section__h3" id="section__h3_2">Basic knowledge</h3>
+			<img class="section__img"  id="strategy" src="img/Basic_knowledge.jpg" alt="Strategy">
+			<p class="section__p" id="section__p_2">You can also find some basic informations about positions, rules and also some advanced knowledge such as rotations, tactics and so on.</p>
 		</section>
 
 
-		<section class="t_m">
-			<h3>Tips</h3>
-			<p>There will also be some tips that will help you during games, practices.</p>
-			
-			<img src="img/tips_tricks.jpg" alt="tips">
+		<section class="section">
+			<h3 class="section__h3" id="section__h3_3">Tips</h3>
+			<img class="section__img" src="img/tips_tricks.jpg" alt="tips">
+			<p class="section__p" id="section__p_3">There will also be some tips that you can find there, that will help you during games, practices and so on.</p>
 		</section>
 </div>
 <!-- <div class="znika"> -->
 <div class="dalej">
-	<div class="te_2">
-		<h4>Let's start!</h4>
+	<div class="dalej__manage te_2">
+		<h4 class="dalej__h4" id="dalej__h4">Let's start!</h4>
 	</div>
-	<div class="przycisk">
-		<div class="p_kolor"><a href="Basic.html"><img id="strzalka" src="img/arrowv_ta_lepsza.png" alt="arrow"></a></div>
+	<div class="dalej__manage2">
+		<div class="dalej__przycisk"><a class="dalej__a" href="Basic.html"><img class="dalej__img" id="strzalka" src="img/arrowv_ta_lepsza.png" alt="arrow"></a></div>
 	</div>
 </div>
-<p class="adnotacja">It will take you to the site with basic information. You can also use the nav from this point on.</p>
-<p class="copyright">Some contents aren't mine and they belong to their legitimate authors.</p>
+<div class="dopowiedzenie">
+	<div class="dopowiedzenie__srod">
+<p class="dopowiedzenie__adnotacja" id="dopowiedzenie__adnotacja">It will take you to the site with some basic information. You can also use the nav from this point on.</p>
+<p class="dopowiedzenie__copyright" id="dopowiedzienie__copyright">© Some contents aren't mine and they belong to their legitimate authors.</p>
+</div>
+</div>
 <!-- </div> -->
 </main>
+
 
 <br>
 <!--footer -->
 <footer>
 	<div class="stopka">
-		<p>Volley.org</p>
-		<p>Good luck on your journey!</p>
-		 <ul>
-			<li>Contact:</li>
-			<li>698 714 823</li>
-			<li>r.rzezniczek19@gmail.com</li>
+		<p class="stopka__p">Volley.org</p>
+		<p class="stopka__p" id="stopka__p_1">Good luck on your journey!</p>
+		 <ul class="stopka__ul">
+			<li class="stopka__li" id="stopka__li_1">Contact:</li>
+			<li class="stopka__li">698 714 823</li>
+			<li class="stopka__li">r.rzezniczek19@gmail.com</li>
 		</ul></p>
 	</div>
 </footer>
@@ -112,6 +119,90 @@
 	}
 	let observer = new IntersectionObserver(callback, options);
 	observer.observe(document.querySelector('#myVideo'));
+
+
+	function getKlik()
+	{
+		//menu
+		let x1=document.getElementById("menu__a_1");
+		let x2=document.getElementById("menu__a_2");
+		let x3=document.getElementById("menu__a_3");
+		let x4=document.getElementById("menu__a_4");
+		let menu_translacja=document.getElementById("menu__button");
+		//wstęp
+		let start=document.getElementById("start__h2");
+		let start_p=document.getElementById("start__p");
+		//main
+		let nagł1=document.getElementById("section__h3_1");
+		let tekst1=document.getElementById("section__p_1");
+		let nagł2=document.getElementById("section__h3_2");
+		let tekst2=document.getElementById("section__p_2");
+		let nagł3=document.getElementById("section__h3_3");
+		let tekst3=document.getElementById("section__p_3");
+		//przycisk
+		let dalej1=document.getElementById("dalej__h4");
+		//adnotacja i copyright
+		let adnotacja=document.getElementById("dopowiedzenie__adnotacja");
+		let copyright=document.getElementById("dopowiedzienie__copyright");
+		//stopka
+		let stopka_p=document.getElementById("stopka__p_1");
+		let stopka_li=document.getElementById("stopka__li_1");
+
+
+		
+
+		if(start.innerHTML=="Before we start")
+		{
+			menu_translacja.innerHTML="EN"
+			x1.innerHTML="Główna"
+			x2.innerHTML="Porady"
+			x3.innerHTML="Podstawy"
+			x4.innerHTML="Ćwiczenia"
+			start.innerHTML="Zanim zaczniemy"
+			start_p.innerHTML="Nasza strona pomoże Ci z brakiem wiedzy, ćwiczeniami i poradami odnośnie stawania się lepszym w siatkówce."
+			nagł1.innerHTML="Ćwiczenia"
+			tekst1.innerHTML="Na naszej stronie znajdziesz ćwiczenia na ogólny rozwój oraz ćwiczenia specyficznie dobrane pod pozycje.	"
+			nagł2.innerHTML="Podstawowa wiedza"
+			tekst2.innerHTML="Znajdziesz tutaj także trochę podstawowych informacji na temat pozycji, zasad oraz trochę wiedzy wynikającej z doświadczenia."
+			nagł3.innerHTML="Porady"
+			tekst3.innerHTML="Znajduje się też tutaj trochę porad, które pomogą Ci w treningach i meczach."
+			dalej1.innerHTML="Zaczynajmy!"
+			adnotacja.innerHTML="Ten przycisk zabierze Cię na stronę z bazowymi informacjami. Możesz także po prostu użyć menu nawigacyjnego."
+			copyright.innerHTML="© Niektóre zawartości na stronie nie są moją własnością i należą do ich prawowitych autorów."
+
+			stopka_p.innerHTML="Powodzenia w rozwijaniu się!"
+			stopka_li.innerHTML="Kontakt:"
+			
+		}
+		else 
+		{
+			menu_translacja.innerHTML="PL"
+			x1.innerHTML="Home"
+			x2.innerHTML="Tips"
+			x3.innerHTML="Basics"
+			x4.innerHTML="Drills"
+			start.innerHTML="Before we start"
+			start_p.innerHTML="Our website will help you with lack of informations, drills and tips on how to become better at volleyball."
+			nagł1.innerHTML="Drills"
+			tekst1.innerHTML="On our website you can find drills for overall improvement and for exact positions you may want to get better at."
+			nagł2.innerHTML="Basic knowledge"
+			tekst2.innerHTML="You can also find some basic informations about positions, rules and also some advanced knowledge such as rotations, tactics and so on."
+			nagł3.innerHTML="Tips"
+			tekst3.innerHTML="There will also be some tips that you can find there, that will help you during games, practices and so on."
+			dalej1.innerHTML="Let's start!"
+			adnotacja.innerHTML="It will take you to the site with some basic information. You can also use the nav from this point on."
+			copyright.innerHTML="© Some contents aren't mine and they belong to their legitimate authors."
+
+			stopka_p.innerHTML="Good luck on your journey!"
+			stopka_li.innerHTML="Contact:"
+		}
+	}
+
   </script>
+
+  <!-- kolorystyka strony 	
+	te tłumaczenie
+	rozijane paski z contentem -->
+  <!-- przerobione -->
 </body>
 </html>

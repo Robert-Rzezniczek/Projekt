@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import '_colors.scss';
+* 
+{
+	box-sizing: border-box;
+	padding:0;
+	margin: 0;
+}
+
+body 
+{
+	font-family: 'Lato', sans-serif;
+	color:rgba(15, 2, 2, 0.904);
+	line-height:1.7;
+}
+
+.tlo
+{
+    width:100%;
+	height:100%;
+
+    &__glowne
+    {
+        height:1000px;
+	
+        background-image: url(../img/Tlo_glownev2.jpg);
+        background-size:cover; 
+        background-repeat: no-repeat;
+        background-position: center center;
+       
+    }
+}
+
+.navigacja
+{
+    display:flex;
+    background-color:$primary-color;//rgb(71, 70, 70)
+	//color:black;
+	height:90px;
+	position:sticky;
+	top:0;
+	width:100%;
+	overflow:auto;
+
+    &__container
+    {
+        
+        //max-width:1650px;
+        width:80%;
+        margin:0 auto;
+        padding:0 40px;
+        overflow:auto;
+        display:flex;
+        justify-content:space-between;
+        align-items:center; 
+        height:100%;
+
+        
+    }
+    &__logo
+    {
+        display:flex;
+        width:64px;
+        height:64px;
+        align-items:center;
+        justify-content:center;
+        transition:all 1s linear 0s;
+    }
+    &__logo:hover
+    {	
+        transition:all 1s linear 0s;
+        transform:rotate(270deg);
+    }
+    &__zdj
+    {
+        width:64px;
+        height:64px;
+    }
+}
+
+.menu
+{
+    
+    &__ul
+    {
+        display:flex;
+        list-style-type: none;
+    }
+    &__a
+    {
+        color:$additional-color;
+        font-weight:700;
+        font-size:17px;
+        padding:8px;
+        margin:0 5px;
+        text-decoration:none;
+        font-weight: 500;
+	    color:$text-color;
+    }
+
+    &__a:first-child
+    {
+        border-bottom: 2px $additional-color solid; 
+        transition:all 0.17s; 
+    }
+    &__a:hover{
+        border-top: 3px $additional-color solid;
+        border-bottom: 3px $additional-color solid;
+        border-radius:5px;
+        transition:all 0.17s;
+    }
+
+    &__button
+    {
+        font-size:10px;
+        background-color:$primary-color;
+        border:2px;
+        color:$text-color;
+        font-size:14px;
+        font-weight:700;
+        height:30px;
+        width:80px;
+        //transition:all 0.31s;
+       
+       
+        
+    }
+    &__button:hover
+    {
+        border:2px solid $additional-color;
+         color:$additional-color;
+         //transition:all 0.31s;
+        // background-color:rgb(225, 186, 10); 
+        // border-radius:3px;
+        
+    }
+}
+
+
+
+.Info
+{
+
+    width:100%;
+	display:flex;
+	justify-content:center;
+	text-align:center;
+	align-items:center;
+	flex-wrap:wrap;
+	font-size:40px;
+    padding-bottom: 600px;
+
+    &__h3
+    {
+        flex-basis:100%;
+    }
+    
+}
+
+
+
+
+.stopka
+{
+    background-color:$primary-color;
+	height:80px;
+	color:$text-color;
+    bottom:0;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+
+    &__p
+    {
+        margin:0 5px;
+        padding:8px 15px;
+    }
+    &__ul
+    {
+        list-style-type:none;
+    }
+}

@@ -4,7 +4,7 @@
 	<title>Volleyball | All you've looked for.</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/Tips_main.css">
+	<link rel="stylesheet" href="scss/Tips_style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="shortcut icon" type="image/png" href="img/logo_r3.png">
 </head>
@@ -12,103 +12,112 @@
 <!--nav-->
 
 <div class="navigacja" >
-	<div class="container c_flex">
-			<h1 class="logo"><img src="img/logo_r3.png" alt="Logo"></h1>
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="Basic.html">Basics </a></li>
-					<li><a href="Drills.html">Drills</a></li>
-					<li><a href="Tips.html">Tips</a></li>
+	<div class="navigacja__container c_flex">
+			<h1 class="navigacja__logo"><img class="navigacja__zdj" src="img/logoR.png" alt="Logo"></h1>
+			<nav class="menu">
+				<ul class="menu__ul">
+					<li class="menu__li"><a class="menu__a" id="menu__a_1" href="index.html">Home</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_2" href="Tips.html">Tips</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_3" href="Basic.html">Basics</a></li>
+					<li class="menu__li"><a class="menu__a" id="menu__a_4" href="Drills.html">Drills</a></li>
+					<li class="menu__li"><button class="menu__button" id="menu__button" onclick="getKlik()">PL</button></li>
+
+					
 				</ul>
 			</nav>
+			
 	</div>
+	
 </div>
-
+<div class="dropdown">
+	<button class="dropdown__dropbtn" id="dropdown__dropbtn">Fast travel</button>
+	<div class="dropdown__content">
+	  <a class="dropdown__a" id="dropdown__a1" href="#start">Start</a>
+	  <a class="dropdown__a" id="dropdown__a2" href="#Tips">Tips</a>
+	  <a class="dropdown__a" id="dropdown__a3" href="#OH">Positions</a>
+	  
+	</div>
+  </div>
 
 
 <!--main -->
 
 <main>
-	<div class="obszar">
+	<div class="obszar" id="start">
+		<br>
+		<br>
 				
-		<h2 id="Tips">Time for some tips</h2>
-		<hr>
+		<h2 class="obszar__h2" id="obszar__h2">Time for some tips</h2>
+		<hr class="obszar__hr">
 		
 		
-<section id="Tips2">
+<section class="Tips" id="Tips">
 	<br>
-	<h3>Basic tips</h3>
-		<ol>
-			<li> <b>Call mine, even when it seems obvious.</b> <p>One of the first things you learn in grade school volleyball is to call mine when you're in position to take the ball. As you play in higher levels of volleyball, this becomes engrained, and you automatically call mine, even when it seems pretty obvious.
+	<br>
+	<br>
+	<h3 class="Tips__h3" id="Tips__h3">Basic tips</h3>
+		<ol class="Tips__ol">
+			<li class="Tips__li"><p class="Tips__limain"><b>Call mine, even when it seems obvious.</b></p><p class="Tips__p">One of the first things you learn in grade school volleyball is to call mine when you're in position to take the ball. As you play in higher levels of volleyball, this becomes engrained, and you automatically call mine, even when it seems pretty obvious.
 
 				For newer players, this instinct isn't as natural. If the ball is coming to you, of course you're going to get it! However, for some players, if they don't hear someone calling “mine”, they may assume that the ball is still 'nobodys' – and someone needs to get it!
 				
 				Calling “mine” might seem silly, but after you've played in a few games, you'll realize how common it actually is. So don't be afraid to speak up and call for that ball!</p></li>
-			<li><b>Try to use all three hits</b><p>In volleyball, each team gets to touch the ball three times before they have to send it back over the net. (Well, technically, they get 4 hits, if one of those touches was a block.) Regardless, sometimes more inexperienced players might get nervous or intimidated by the ball and send the ball over the net before their team has maximized their 3 hits.</p></li>
-			<li><b>Don't touch the second ball – unless the setter can't make it</b><p>While we're on the topic of three touches, it's a good time to remind players to let the setter take that second ball. The setter is a specialized position that takes the second ball and sets up the hitters.
+			<li class="Tips__li"><p class="Tips__limain" ><b>Try to use all three hits</b></p><p class="Tips__p">In volleyball, each team gets to touch the ball three times before they have to send it back over the net. (Well, technically, they get 4 hits, if one of those touches was a block.) Regardless, sometimes more inexperienced players might get nervous or intimidated by the ball and send the ball over the net before their team has maximized their 3 hits.</p></li>
+			<li class="Tips__li"><p class="Tips__limain" ><b>Don't touch the second ball – unless the setter can't make it</b></p><p class="Tips__p">While we're on the topic of three touches, it's a good time to remind players to let the setter take that second ball. The setter is a specialized position that takes the second ball and sets up the hitters.
 
 				Sometimes that first bump can be off-target from where it's supposed to go, and the setter has to run it down. And sometimes, that ball might be headed right towards one of the other players. While it might be tempting to just set the ball, the setter is the specialized player whose role it is to setup the hitters.</p></li>
-			<li><b>Don't set the ball too close to the net</b><p>If the setter calls help and a non-setter player ends up having to set the ball, one of the most common errors they make is to set the ball too close to the net. This means that the hitter doesn't get to use their full hitting approach, and their hitting options are more limited.</p></li>
-			<li><b>Don't land on or under the net</b><p>As a newer player, you may not be getting as many sets, so it's really tempting to hit as many spikes as you can. This is a great attitude, however, make sure you maintain a controlled hitting approach, and good spatial awareness of the net, including the area under the net.</p></li>
-			<li><b>Don't pass the ball too close to the net</b><p>Another classic error is to pass (or bump) the ball too close to the net. This is sometimes referred to as an over bump. An over bump makes it really difficult for the setter to be able to set the ball – and even if they can salvage it to get a set, chances are they won't be able to run any plays.</p></li>
-			<li><b>Don't catch the ball during a play</b><p>It may sound fairly easy but it really does happen quite frequently to be honest.</p></li>
-			<li><b>Always be prepared for possible casualities</b><p> Always bring all the equipment you're going to need – and maybe even some extra</p></li>
-			<li><b>Don't just jump straight up when blocking</b><p>Many people think that when you're blocking a spike, you just put your arms in the air and jump straight up. What you actually want to do is press your hands forward at the peak of your jump, as if you'repushing against the volleyball as it's being spiked. 
+			<li class="Tips__li"><p class="Tips__limain" ><b>Don't set the ball too close to the net</b></p><p class="Tips__p">If the setter calls help and a non-setter player ends up having to set the ball, one of the most common errors they make is to set the ball too close to the net. This means that the hitter doesn't get to use their full hitting approach, and their hitting options are more limited.</p></li>
+			<li class="Tips__li"><p class="Tips__limain" ><b>Don't land on or under the net</b></p><p class="Tips__p">As a newer player, you may not be getting as many sets, so it's really tempting to hit as many spikes as you can. This is a great attitude, however, make sure you maintain a controlled hitting approach, and good spatial awareness of the net, including the area under the net.</p></li>
+			<li class="Tips__li"><p class="Tips__limain" ><b>Don't pass the ball too close to the net</b></p><p class="Tips__p">Another classic error is to pass (or bump) the ball too close to the net. This is sometimes referred to as an over bump. An over bump makes it really difficult for the setter to be able to set the ball – and even if they can salvage it to get a set, chances are they won't be able to run any plays.</p></li>
+			<li class="Tips__li"><p class="Tips__limain" ><b>Don't catch the ball during a play</b></p><p class="Tips__p">It may sound fairly easy but it really does happen quite frequently to be honest.</p></li>
+			<li class="Tips__li"><p class="Tips__limain" ><b>Always be prepared for possible casualities</b></p><p class="Tips__p"> Always bring all the equipment you're going to need – and maybe even some extra</p></li>
+			<li class="Tips__li"><p class="Tips__limain" ><b>Don't just jump straight up when blocking</b></p><p class="Tips__p">Many people think that when you're blocking a spike, you just put your arms in the air and jump straight up. What you actually want to do is press your hands forward at the peak of your jump, as if you'repushing against the volleyball as it's being spiked. 
 				This push will actually give you a much stronger block and should prevent the momentum of the ball from just pushing right through your hands.
 				Just make sure that you're jumping high enough over the net, so that you're pushing above the height of the net and not touching the net at all – otherwise you might be at risk of getting a net violation call.</p></li>
 			
 		</ol>
-
-
-
 		<br>
 	</section>
 
-<section id="OH">
+<section class="poz" id="OH">
 	<br>
-	<h3>For Outside Hitters</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsam. Earum possimus quas porro animi distinctio. Nulla, soluta dignissimos iure, error, ea veritatis beatae est velit fuga enim accusantium reiciendis?</p>
+	<br>
+	<br>
+	<h3 class="poz__h3">For Outside Hitters</h3>
+	<p class="poz__p">More will come soon.</p>
 </section>
 
-<section id="RS">
+<section class="poz" id="RS">
 	<br>
-	<h3>For Rightside Hitters</h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsam. Earum possimus quas porro animi distinctio. Nulla, soluta dignissimos iure, error, ea veritatis beatae est velit fuga enim accusantium reiciendis?</p>
-
-</section>
-
-<section id="MB">
-	<br>
-	<h3>For Middle Blockers </h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsam. Earum possimus quas porro animi distinctio. Nulla, soluta dignissimos iure, error, ea veritatis beatae est velit fuga enim accusantium reiciendis?</p>
+	<h3 class="poz__h3">For Rightside Hitters</h3>
+	<p class="poz__p">More will come soon.</p>
 
 </section>
 
-<section id="S">
+<section class="poz" id="MB">
 	<br>
-	<h3>For Setters </h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsam. Earum possimus quas porro animi distinctio. Nulla, soluta dignissimos iure, error, ea veritatis beatae est velit fuga enim accusantium reiciendis?</p>
+	<h3 class="poz__h3">For Middle Blockers </h3>
+	<p class="poz__p">More will come soon.</p>
 
 </section>
 
-<section id="L">
+<section class="poz" id="S">
 	<br>
-	<h3>For Libero </h3>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsam. Earum possimus quas porro animi distinctio. Nulla, soluta dignissimos iure, error, ea veritatis beatae est velit fuga enim accusantium reiciendis?</p>
+	<h3 class="poz__h3">For Setters </h3>
+	<p class="poz__p">More will come soon.</p>
 
 </section>
 
-	
+<section class="poz" id="L">
+	<br>
+	<h3 class="poz__h3">For Libero </h3>
+	<p class="poz__p">More will come soon.</p>
 
-
-
-
-
+</section>
 
 	</div>
 
-	<section class="odnosnik">
+	<!-- <section class="odnosnik">
 		
 		<div class="podstrony">
 				<ul>
@@ -120,18 +129,10 @@
 					<li><a href="#S">Setters</a></li>
 					<li><a href="#L">Liberos</a></li>
 				</ul>
-				
-	
 		</div>
+		 <div class="przycisk2"><a href="Rotations.html"><p id="Tekst"><b>MORE</b></p></a></div>
 
-		<!-- <div class="przycisk2"><a href="Rotations.html"><p id="Tekst"><b>MORE</b></p></a></div> -->
-
-
-	</section>
-	
-
-
-	
+	</section> -->
 
 </main>
 
@@ -139,15 +140,230 @@
 <!--footer -->
 <footer>
 	<div class="stopka">
-		<p>Volley.org</p>
-		<p>Good luck on your journey!</p>
-		 <ul>
-			<li>Contact:</li>
-			<li>698 714 823</li>
-			<li>r.rzezniczek19@gmail.com</li>
+		<p class="stopka__p">Volley.org</p>
+		<p class="stopka__p" id="stopka__p_1">Good luck on your journey!</p>
+		 <ul class="stopka__ul">
+			<li class="stopka__li" id="stopka__li_1">Contact:</li>
+			<li class="stopka__li">698 714 823</li>
+			<li class="stopka__li">r.rzezniczek19@gmail.com</li>
 		</ul></p>
 	</div>
 </footer>
+<script>
+		function getKlik()
+	{
+		//menu
+		let x1=document.getElementById("menu__a_1");
+		let x2=document.getElementById("menu__a_2");
+		let x3=document.getElementById("menu__a_3");
+		let x4=document.getElementById("menu__a_4");
+		let menu_translacja=document.getElementById("menu__button");
+
+		//start strony
+		let start=document.getElementById("Bk");
+		let dopisek=document.getElementById("obszar__p");
+		//pomocnicze przyciski
+
+		// let przyc=document.getElementById("dropdown__dropbtn");
+		// let op1=document.getElementById("dropdown__a1");
+		// let op2=document.getElementById("dropdown__a2");
+		// let op3=document.getElementById("dropdown__a3");
+		// let op4=document.getElementById("dropdown__a4");
+
+		//pomocnicze przyciski
+
+		let przyc=document.getElementById("dropdown__dropbtn");
+		let op1=document.getElementById("dropdown__a1");
+		let op2=document.getElementById("dropdown__a2");
+		let op3=document.getElementById("dropdown__a3");
+
+
+		//start
+
+		let nagl=document.getElementById("obszar__h2");
+		let tytul=document.getElementById("Tips__h3");
+
+		let li1=document.getElementsByClassName("Tips__limain")[0];
+		let li2=document.getElementsByClassName("Tips__limain")[1];
+		let li3=document.getElementsByClassName("Tips__limain")[2];
+		let li4=document.getElementsByClassName("Tips__limain")[3];
+		let li5=document.getElementsByClassName("Tips__limain")[4];
+		let li6=document.getElementsByClassName("Tips__limain")[5];
+		let li7=document.getElementsByClassName("Tips__limain")[6];
+		let li8=document.getElementsByClassName("Tips__limain")[7];
+		let li9=document.getElementsByClassName("Tips__limain")[8];
+		
+		let p1=document.getElementsByClassName("Tips__p")[0];
+		let p2=document.getElementsByClassName("Tips__p")[1];
+		let p3=document.getElementsByClassName("Tips__p")[2];
+		let p4=document.getElementsByClassName("Tips__p")[3];
+		let p5=document.getElementsByClassName("Tips__p")[4];
+		let p6=document.getElementsByClassName("Tips__p")[5];
+		let p7=document.getElementsByClassName("Tips__p")[6];
+		let p8=document.getElementsByClassName("Tips__p")[7];
+		let p9=document.getElementsByClassName("Tips__p")[8];
+
+		let poz1=document.getElementsByClassName("poz__h3")[0];
+		let poz2=document.getElementsByClassName("poz__h3")[1];
+		let poz3=document.getElementsByClassName("poz__h3")[2];
+		let poz4=document.getElementsByClassName("poz__h3")[3];
+		let poz5=document.getElementsByClassName("poz__h3")[4];
+
+		let po1=document.getElementsByClassName("poz__p")[0];
+		let po2=document.getElementsByClassName("poz__p")[1];
+		let po3=document.getElementsByClassName("poz__p")[2];
+		let po4=document.getElementsByClassName("poz__p")[3];
+		let po5=document.getElementsByClassName("poz__p")[4];
+		
+		
+
+
+
+
+		//stopka
+		let stopka_p=document.getElementById("stopka__p_1");
+		let stopka_li=document.getElementById("stopka__li_1");
+
+
+		
+
+		if(x1.innerHTML=="Home")
+		{
+			menu_translacja.innerHTML="EN"
+			x1.innerHTML="Główna"
+			x2.innerHTML="Porady"
+			x3.innerHTML="Podstawy"
+			x4.innerHTML="Ćwiczenia"
+
+			nagl.innerHTML="Pora na trochę porad"
+			tytul.innerHTML="Podstawowe porady"
+
+
+			przyc.innerHTML="Skrót"
+			op1.innerHTML="Początek"
+			op2.innerHTML="Porady"
+			op3.innerHTML="Pozycje"
+			
+			li1.innerHTML="<b>Wołaj, że masz zamiar wziąść piłkę</b>"
+			li2.innerHTML="<b>Staraj się zawsze wykorzystywać wszystkie 3 kontakty z piłką</b>"
+			li3.innerHTML="<b>Drugie dotknięcie zostawiaj rozgrywającemu - no chyba, że nie jest w stanie się wyrobić</b>"
+			li4.innerHTML="<b>Nie wystawiaj piłki za blisko siatki</b>"
+			li5.innerHTML="<b>Nie ląduj na siatce, bądź pod nią</b>"
+			li6.innerHTML="<b>Nie podawaj piłki zbyt blisko siatki</b>"
+			li7.innerHTML="<b>Nie łap piłki w trakcie akcji</b>"
+			li8.innerHTML="<b>Bądź zawsze gotowy na wszelkie możliwe sytuacje</b>"
+			li9.innerHTML="<b>Skakanie do bloku to nie tylko skakanie w górę</b>"
+			
+			p1.innerHTML="Jedną z pierwszych rzeczy, których uczysz się od początku twojej przygody z siatkówką jest komunikacja z swoją drużyną, dlatego tak ważne jest by jasno przekazać swojemu zespołowi zamiar przejęcia piłki. Wraz z czasem i doświadczeniem staje się to nawykiem i już automatycznie będziesz dawał tą informację mimo, że w niektórych przypadkach będzie to dość oczywiste. W sytuacji, w której nikt nie dał informacji o zamiarze przejęcia piłki, niektórzy zawodnicy mogą myśleć, że ta piłka jest niczyja i trzeba ją wziąć."
+			p2.innerHTML="W siatkówce każda drużyna może dotknąć piłkę 3 razy do momentu przebicia ją na strone przeciwnika(z technicznego punktu widzenia to 4 jeśli wcześniej blokowano atak przeciwnika). Nie raz niedoświadczeni gracze ze względu na stres od razu przebijają piłkę, co ogranicza możliwości ofensywne drużyny."
+			p3.innerHTML="Będąc w temacie wszystkich 3 dotknięć, warto przypomnieć zawodnikom o zostawianiu drugiej piłki rozgrywającemu. Mimo różnych sytuacji na boisku warto pamiętać, że rozgrywający jest wyspecjalizowany w rozegraniu i dopóki sytuacja jest bez wyjścia to lepiej zostawić mu wystawianie piłki."
+			p4.innerHTML="W sytuacji, w której rozgrywający prosi innego zawodnika drużyny o pomoc, bo nie jest w stanie się wyrobić, ważne jest by nie wystawić piłi zbyt blisko siatki(co jest dość częstym błędem). Przy takim zagraniu atakujący nie ma zbyt wielu możliwości i musi się bardzo dostosować."
+			p5.innerHTML="Będąc nowym, nie doświadczonym graczem, możesz nie być przyzwyczajony do rozegrań"
+			p6.innerHTML="Kolejnym klasycznym błędem jest podawanie piłki z przyjęcia za blisko siatki, przez co rozgrywający ma bardzo utrudnione zadanie zwłaszcza, że musi uważać na siatkę."
+			p7.innerHTML="Może to brzmieć dziwnie i bardzo prosto, ale niektórzy dosyć często łapią piłki a nie powinni."
+			p8.innerHTML="Zawsze bierz ze sobą wszystko czego możesz potrzebować - i pare dodatkowych rzeczy."
+			p9.innerHTML="Dla wielu blokowanie ataku to zwyczajnie jest skakanie do góry z rękami wzniesionymi do góry. Co bardzo ważne przy blokowaniu to to by utrudnić przeciwnikowi atak na ile to możliwe poprzez zabieranie mu miejsca rękami(przekładaniem ich na drugą stronę siatki). Pamiętaj by nie dotknąć wtedy siatki bo stracsz punkt. "
+		
+
+			poz1.innerHTML="Dla Lewego Skrzydła"
+			poz2.innerHTML="Dla Prawego Skrzydła"
+			poz3.innerHTML="Dla Środkowych"
+			poz4.innerHTML="Dla Rozgrywających"
+			poz5.innerHTML="Dla Libero"
+
+			po1.innerHTML="Więcej treści nadejdzie w krótce."
+			po2.innerHTML="Więcej treści nadejdzie w krótce."
+			po3.innerHTML="Więcej treści nadejdzie w krótce."
+			po4.innerHTML="Więcej treści nadejdzie w krótce."
+			po5.innerHTML="Więcej treści nadejdzie w krótce."
+		
+
+			stopka_p.innerHTML="Powodzenia w rozwijaniu się!"
+			stopka_li.innerHTML="Kontakt:"
+			
+		}
+		else 
+		{
+			menu_translacja.innerHTML="PL"
+			x1.innerHTML="Home"
+			x2.innerHTML="Tips"
+			x3.innerHTML="Basics"
+			x4.innerHTML="Drills"
+
+			nagl.innerHTML="Time for some tips"
+			tytul.innerHTML="Basic tips"
+
+			przyc.innerHTML="Fast travel"
+			op1.innerHTML="Start"
+			op2.innerHTML="Tips"
+			op3.innerHTML="Positions"
+
+			
+
+			li1.innerHTML="<b>Call mine, even when it seems obvious.</b>"
+			li2.innerHTML="<b>Try to use all three hits</b>"
+			li3.innerHTML="<b>Don't touch the second ball – unless the setter can't make it</b>"
+			li4.innerHTML="<b>Don't set the ball too close to the net</b>"
+			li5.innerHTML="<b>Don't land on or under the net</b>"
+			li6.innerHTML="<b>Don't pass the ball too close to the net</b>"
+			li7.innerHTML="<b>Don't catch the ball during a play</b>"
+			li8.innerHTML="<b>Always be prepared for possible casualities</b>"
+			li9.innerHTML="<b>Don't just jump straight up when blocking</b>"
+
+			p1.innerHTML="One of the first things you learn in grade school volleyball is to call mine when you're in position to take the ball. As you play in higher levels of volleyball, this becomes engrained, and you automatically call mine, even when it seems pretty obvious. For newer players, this instinct isn't as natural. If the ball is coming to you, of course you're going to get it! However, for some players, if they don't hear someone calling “mine”, they may assume that the ball is still 'nobodys' – and someone needs to get it! Calling “mine” might seem silly, but after you've played in a few games, you'll realize how common it actually is. So don't be afraid to speak up and call for that ball!"
+			p2.innerHTML="In volleyball, each team gets to touch the ball three times before they have to send it back over the net. (Well, technically, they get 4 hits, if one of those touches was a block.) Regardless, sometimes more inexperienced players might get nervous or intimidated by the ball and send the ball over the net before their team has maximized their 3 hits."
+			p3.innerHTML="While we're on the topic of three touches, it's a good time to remind players to let the setter take that second ball. The setter is a specialized position that takes the second ball and sets up the hitters. Sometimes that first bump can be off-target from where it's supposed to go, and the setter has to run it down. And sometimes, that ball might be headed right towards one of the other players. While it might be tempting to just set the ball, the setter is the specialized player whose role it is to setup the hitters."
+			p4.innerHTML="If the setter calls help and a non-setter player ends up having to set the ball, one of the most common errors they make is to set the ball too close to the net. This means that the hitter doesn't get to use their full hitting approach, and their hitting options are more limited."
+			p5.innerHTML="As a newer player, you may not be getting as many sets, so it's really tempting to hit as many spikes as you can. This is a great attitude, however, make sure you maintain a controlled hitting approach, and good spatial awareness of the net, including the area under the net."
+			p6.innerHTML="Another classic error is to pass (or bump) the ball too close to the net. This is sometimes referred to as an over bump. An over bump makes it really difficult for the setter to be able to set the ball – and even if they can salvage it to get a set, chances are they won't be able to run any plays."
+			p7.innerHTML="It may sound fairly easy but it really does happen quite frequently to be honest."
+			p8.innerHTML="Always bring all the equipment you're going to need – and maybe even some extra"
+			p9.innerHTML="Many people think that when you're blocking a spike, you just put your arms in the air and jump straight up. What you actually want to do is press your hands forward at the peak of your jump, as if you'repushing against the volleyball as it's being spiked. This push will actually give you a much stronger block and should prevent the momentum of the ball from just pushing right through your hands. Just make sure that you're jumping high enough over the net, so that you're pushing above the height of the net and not touching the net at all – otherwise you might be at risk of getting a net violation call."
+
+
+			poz1.innerHTML="For Outside Hitters"
+			poz2.innerHTML="For Rightside Hitters"
+			poz3.innerHTML="For Middle Blockers"
+			poz4.innerHTML="For Setters"
+			poz5.innerHTML="For Libero"
+
+			po1.innerHTML="More will come soon."
+			po2.innerHTML="More will come soon."
+			po3.innerHTML="More will come soon."
+			po4.innerHTML="More will come soon."
+			po5.innerHTML="More will come soon."
+			// przyc.innerHTML="Fast travel"
+			// op1.innerHTML="Start"
+			// op2.innerHTML="Rules"
+			// op3.innerHTML="Positions"
+			// op4.innerHTML="MORE"
+
+		
+			
+			stopka_p.innerHTML="Good luck on your journey!"
+			stopka_li.innerHTML="Contact:"
+		}
+	}
+
+	function spr()
+	{
+		let zmienna=document.getElementById("zasady_ul");
+
+		if(zmienna.className=="zasady__ul")
+		{
+			zmienna.className="zasady__ul_znik"
+		}
+		else
+		{
+			zmienna.className="zasady__ul"
+		}
+	}
+	
+
+
+
+
+</script>
 
 </body>
 </html>
