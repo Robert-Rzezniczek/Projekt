@@ -180,3 +180,18 @@ body
         list-style-type:none;
     }
 }
+
+@media only screen and (max-width: 800px)
+{
+    .Info
+    {
+        &__h3
+        {
+            font-size:25px;
+        }
+        &__p
+        {
+            font-size:25px;
+        }
+    }
+}

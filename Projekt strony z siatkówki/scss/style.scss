@@ -34,6 +34,7 @@ body
     }
 }
 
+
 .navigacja
 {
     display:flex;
@@ -185,7 +186,7 @@ body
     &__h3
     {
         
-        font-size:30px;
+        font-size:27px;
 	    font-weight:bold;
         margin:20px 0px;
     }
@@ -348,3 +349,61 @@ body
         list-style-type:none;
     }
 }
+
+
+//=====================================
+@media only screen and (max-width: 800px)
+{
+    .tlo
+    {
+        //height:1000px;
+        width:100%;
+        &__glowne
+        {
+            height:600px;
+            
+        }
+    }
+    .start
+    {
+        &__h2
+        {
+            font-size:30px;
+        }
+        &__p
+        {
+            font-size:18px;
+            padding:30px;
+        }
+    }
+    .section
+    {
+        &__h3
+        {
+            font-size:25px;
+            text-align:center;
+        }
+        &__p
+        {
+            font-size:15px;
+        }
+        &__img
+        {
+            height:110px;
+        }
+    }
+    .dopowiedzenie
+    {
+        text-align: center;
+        padding:5px;
+        &__adnotacja
+        {
+            font-size:12px;
+        }
+        &__copyright
+        {
+            font-size:12px;
+        }
+    }
+}
+

@@ -128,4 +128,13 @@ body {
 }
 .stopka__ul {
   list-style-type: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .Info__h3 {
+    font-size: 25px;
+  }
+  .Info__p {
+    font-size: 25px;
+  }
 }/*# sourceMappingURL=Drills_style.css.map */
