@@ -7,28 +7,32 @@
 	<!-- <link rel="stylesheet" href="css/main.css"> -->
 	<link rel="stylesheet" href="scss/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 	<link rel="shortcut icon" type="image/png" href="img/logo_r3.png">
 </head>
 
 <body>
 	<div class="tlo">
-	<div class="tlo__glowne"></div>
+	<div class="tlo__glowne" id="tlo__glowne"></div>
 </div>
 
 
 
 <!--nav-->
 
-<div class="navigacja" >
+<div class="navigacja" id="navigacja" >
 	<div class="navigacja__container c_flex">
-			<h1 class="navigacja__logo"><img class="navigacja__zdj" src="img/logoR.png" alt="Logo"></h1>
-			<nav class="menu">
+			<h1 class="navigacja__logo" id="logo"><img class="navigacja__zdj" src="img/logoR.png" alt="Logo"></h1>
+			<nav class="menu" id="menu">
 				<ul class="menu__ul">
 					<li class="menu__li"><a class="menu__a" id="menu__a_1" href="index.html">Home</a></li>
 					<li class="menu__li"><a class="menu__a" id="menu__a_2" href="Tips.html">Tips</a></li>
 					<li class="menu__li"><a class="menu__a" id="menu__a_3" href="Basic.html">Basics</a></li>
 					<li class="menu__li"><a class="menu__a" id="menu__a_4" href="Drills.html">Drills</a></li>
-					<li class="menu__li"><button class="menu__button" id="menu__button" onclick="getKlik()">PL</button></li>
+					<li class="menu__li"><button class="menu__button" id="menu__button1" onclick="getKlik()">PL</button></li>
+					<li class="menu__li"><span class="material-symbols-outlined menu__button2" id="menu__button2" onclick="color_wcag()">contrast</span></li>
+					
+					<!-- <button class="menu__button " id="menu__button2" onclick="color_wcag()">coś</button> -->
 				</ul>
 			</nav>
 	</div>
@@ -37,15 +41,16 @@
 
 
 <!--main -->
+
+<main id="ctekst" class="tekstw">
+	<br>
 <br>
-<br>
-<main>
 	<div class="start">
 		<h2 class="start__h2" id="start__h2"><b>Before we start</b></h2>
 		<p class="start__p" id="start__p">Our website will help you with lack of informations, drills and tips on how to become better at volleyball. </p>
 	</div>
-	<div class="zapoznanie">
-		<section class="section">
+	<div class="zapoznanie" id="zapoznanie">
+		<section class="section" id="section1">
 			<h3 class="section__h3" id="section__h3_1">Drills</h3>
 			<video class="section__video" id="myVideo" controls width="500" muted>
 				<source src="Video/The_Whip.mp4" type="video/mp4">
@@ -53,42 +58,44 @@
 			  <p class="section__p" id="section__p_1">On our website you can find drills for overall improvement and for exact postisions you may want to get better at.</p>
 		</section>
 
-		<section class="section">
+		<section class="section" id="section2">
 			<h3 class="section__h3" id="section__h3_2">Basic knowledge</h3>
 			<img class="section__img"  id="strategy" src="img/Basic_knowledge.jpg" alt="Strategy">
 			<p class="section__p" id="section__p_2">You can also find some basic informations about positions, rules and also some advanced knowledge such as rotations, tactics and so on.</p>
 		</section>
 
 
-		<section class="section">
+		<section class="section" id="section3">
 			<h3 class="section__h3" id="section__h3_3">Tips</h3>
-			<img class="section__img" src="img/tips_tricks.jpg" alt="tips">
+			<img class="section__img" id="tips2" src="img/tips_tricks.jpg" alt="tips">
 			<p class="section__p" id="section__p_3">There will also be some tips that you can find there, that will help you during games, practices and so on.</p>
 		</section>
 </div>
 <!-- <div class="znika"> -->
-<div class="dalej">
-	<div class="dalej__manage te_2">
+<div class="dalej" >
+	<div class="dalej__manage te_2" id="dalej">
 		<h4 class="dalej__h4" id="dalej__h4">Let's start!</h4>
 	</div>
 	<div class="dalej__manage2">
 		<div class="dalej__przycisk"><a class="dalej__a" href="Basic.html"><img class="dalej__img" id="strzalka" src="img/arrowv_ta_lepsza.png" alt="arrow"></a></div>
 	</div>
 </div>
-<div class="dopowiedzenie">
-	<div class="dopowiedzenie__srod">
+<div class="dopowiedzenie" >
+	<div class="dopowiedzenie__srod" id="dopowiedzenie">
 <p class="dopowiedzenie__adnotacja" id="dopowiedzenie__adnotacja">It will take you to the site with some basic information. You can also use the nav from this point on.</p>
 <p class="dopowiedzenie__copyright" id="dopowiedzienie__copyright">© Some contents aren't mine and they belong to their legitimate authors.</p>
 </div>
 </div>
 <!-- </div> -->
+<br>
+<br>
 </main>
 
 
-<br>
+
 <!--footer -->
 <footer>
-	<div class="stopka">
+	<div class="stopka" id="stopka">
 		<p class="stopka__p">Volley.org</p>
 		<p class="stopka__p" id="stopka__p_1">Good luck on your journey!</p>
 		 <ul class="stopka__ul">
@@ -130,7 +137,7 @@
 		let x2=document.getElementById("menu__a_2");
 		let x3=document.getElementById("menu__a_3");
 		let x4=document.getElementById("menu__a_4");
-		let menu_translacja=document.getElementById("menu__button");
+		let menu_translacja=document.getElementById("menu__button1");
 		//wstęp
 		let start=document.getElementById("start__h2");
 		let start_p=document.getElementById("start__p");
@@ -198,6 +205,82 @@
 			stopka_p.innerHTML="Good luck on your journey!"
 			stopka_li.innerHTML="Contact:"
 		}
+	}
+
+
+	
+
+	function color_wcag()
+	{
+		let tlo=document.getElementById("tlo__glowne");
+		let logo=document.getElementById("logo");
+		let navigacja=document.getElementById("navigacja");
+		let menu1=document.getElementById("menu__a_1");
+		let menu2=document.getElementById("menu__a_2");
+		let menu3=document.getElementById("menu__a_3");
+		let menu4=document.getElementById("menu__a_4");
+		let button1=document.getElementById("menu__button1");
+		let button2=document.getElementById("menu__button2");
+		let main = document.getElementById("ctekst");
+		let zapoznanie=document.getElementById("zapoznanie");
+		let sekcja1=document.getElementById("section1");
+		let sekcja2=document.getElementById("section2");
+		let sekcja3=document.getElementById("section3");
+		let img1=document.getElementById("strategy");
+		let img2=document.getElementById("tips2");
+		let vid1=document.getElementById("myVideo");
+		let dalej=document.getElementById("dalej__h4");
+		let dopowiedzenie=document.getElementById("dopowiedzenie");
+		let stopka = document.getElementById("stopka");
+
+		if(navigacja.className=="navigacja")
+		{
+			tlo.className="tlo__glowne--wcag";
+			logo.className="navigacja__logo--wcag";
+			navigacja.className="navigacja--wcag";
+			menu1.className="menu__a--wcag";
+			menu2.className="menu__a--wcag";
+			menu3.className="menu__a--wcag";
+			menu4.className="menu__a--wcag";
+			button1.className="menu__button--wcag";
+			button2.className="material-symbols-outlined menu__button2--wcag";
+			main.className="tekstw--wcag";
+			zapoznanie.className="zapoznanie--wcag";
+			section1.className="section--wcag";
+			section2.className="section--wcag";
+			section3.className="section--wcag";
+			img1.className="section__img--wcag";
+			img2.className="section__img--wcag";
+			vid1.className="section__video--wcag";
+			dalej.className="dalej__h4--wcag";
+			dopowiedzenie.className="dopowiedzenie__srod--wcag";
+			stopka.className="stopka--wcag";
+		}
+		else if(navigacja.className=="navigacja--wcag")
+		{
+			tlo.className="tlo__glowne";
+			logo.className="navigacja__logo";
+			navigacja.className="navigacja";
+			menu1.className="menu__a";
+			menu2.className="menu__a";
+			menu3.className="menu__a";
+			menu4.className="menu__a";
+			button1.className="menu__button";
+			button2.className="material-symbols-outlined menu__button2";
+			main.className="tekstw";
+			zapoznanie.className="zapoznanie"
+			section1.className="section";
+			section2.className="section";
+			section3.className="section";
+			img1.className="section__img";
+			img2.className="section__img";
+			vid1.className="section__video";
+			dalej.className="dalej__h4";
+			dopowiedzenie.className="dopowiedzenie__srod";
+			stopka.className="stopka";
+		}
+
+
 	}
 
   </script>
